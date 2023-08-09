@@ -53,16 +53,16 @@ const Showcase = () => {
 
           {/* --social-icons-- */}
           <FlexContainer gap="1.25rem">
-            <IconContainer color="white" size="1.5rem" href="https://github.com/marcosprofile" target="_blank">
+            <IconContainer color="white" size="2rem" href="https://github.com/marcosprofile" target="_blank">
               <BsGithub />
             </IconContainer>
-            <IconContainer color="white" size="1.5rem" href="https://www.behance.net/marcoslferreira" target="_blank">
+            <IconContainer color="white" size="2rem" href="https://www.behance.net/marcoslferreira" target="_blank">
               <BsBehance />
             </IconContainer>
-            <IconContainer color="white" size="1.5rem" href="https://www.linkedin.com/in/marcosdesigntech/" target="_blank">
+            <IconContainer color="white" size="2rem" href="https://www.linkedin.com/in/marcosdesigntech/" target="_blank">
               <BsLinkedin />
             </IconContainer>
-            <IconContainer color="white" size="1.5rem" href="mailto:marcos.designtech@hotmail.com">
+            <IconContainer color="white" size="2rem" href="mailto:marcos.designtech@hotmail.com">
               <BsEnvelope />
             </IconContainer>
           </FlexContainer>
