@@ -76,3 +76,21 @@ export const IconContainer = styled.a`
     }
   }};
 `
+
+export const Button = styled.a`
+  display: inline-block;
+  width: max-content;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.primary_light};
+  border: 1px solid ${({ theme }) => theme.colors.gray};
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all .2s linear;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.primary_light};
+    background-color: ${({ theme }) => theme.colors.white};
+  }
+`

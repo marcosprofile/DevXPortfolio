@@ -28,8 +28,8 @@ const MySkills = () => {
       <FlexContainer fullWidthChild>
         {/* --left-section-- */}
         <SkillsCardContainer>
-          {Skills.map((skill) => (
-            <SkillsCard>
+          {Skills.map((skill, id) => (
+            <SkillsCard key={id}>
               <IconContainer size="5rem" color="blue">
                 {skill.icon}
               </IconContainer>
@@ -43,7 +43,7 @@ const MySkills = () => {
         {/* --right-section-- */}
         <div>
           <Heading as="h4" size="h4">
-            MY SKILLS
+            MINHAS SKILLS
           </Heading>
 
           <Heading as="h2" size="h2" top=".5rem">
