@@ -29,7 +29,7 @@ const Project = ({ data }) => {
             { data.project_name }
           </Heading>
 
-          <IconContainer color="blue" size="2rem">
+          <IconContainer color="blue" size="2rem" href="https://github.com/marcosprofile" target="_blank">
             <FaGithub />
           </IconContainer>
         </FlexContainer>
