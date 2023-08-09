@@ -18,6 +18,6 @@ export const ProjectImage = styled.img`
   border: 1px solid #FFF;
   width: 80%;
   height: 300px;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 10px;
 `

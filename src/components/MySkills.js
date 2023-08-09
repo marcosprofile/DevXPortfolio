@@ -25,7 +25,7 @@ const MySkills = () => {
       top="10%"
       bottom="10%"
     >
-      <FlexContainer fullWidthChild>
+      <FlexContainer fullWidthChild gap="5.5rem">
         {/* --left-section-- */}
         <SkillsCardContainer>
           {Skills.map((skill, id) => (
