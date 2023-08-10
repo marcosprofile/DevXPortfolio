@@ -94,3 +94,6 @@ export const Button = styled.a`
     background-color: ${({ theme }) => theme.colors.white};
   }
 `
+
+export const Submit = styled(Button).attrs({ as: 'button' })`
+`;
