@@ -53,7 +53,7 @@ export const projectDetails = [
     tech_stack: ['Angular', 'SASS', 'TypeScript'],
     project_img: MyTodoList,
     project_url: 'https://todo-list-angular-ecru.vercel.app/',
-    reverse: false,
+    reverse: true,
   },
   {
     id: 2,
@@ -71,7 +71,7 @@ export const projectDetails = [
     tech_stack: ['HTML', 'CSS', 'JavaScript'],
     project_img: ViaCEP,
     project_url: 'https://via-cep-api-omega.vercel.app/',
-    reverse: false,
+    reverse: true,
   },
   {
     id: 4,
@@ -89,7 +89,7 @@ export const projectDetails = [
     tech_stack: ['HTML', 'Bootstrap', 'CSS'],
     project_img: Finans,
     project_url: 'https://projeto-finans-iota.vercel.app/',
-    reverse: false,
+    reverse: true,
   },
   {
     id: 6,
@@ -101,3 +101,26 @@ export const projectDetails = [
     reverse: false,
   },
 ];
+
+export const navLinks = [
+  {
+    id: 0,
+    name: 'Home',
+    href: '#Home'
+  },
+  {
+    id: 1,
+    name: 'Minhas Skills',
+    href: '#Skills'
+  },
+  {
+    id: 2,
+    name: 'Meus Projetos',
+    href: '#Projects'
+  },
+  {
+    id: 3,
+    name: 'Contato',
+    href: '#Contact'
+  },
+]
