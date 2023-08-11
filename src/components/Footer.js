@@ -18,11 +18,7 @@ import {
   FormInput,
 } from './../styles/Footer.styled';
 
-import {
-  fadeInBottomVariant,
-  fadeInLeftVariant,
-  fadeInRightVariant,
-} from '../utils/Variants';
+import { fadeInBottomVariant } from '../utils/Variants';
 
 const Footer = () => {
   return (
