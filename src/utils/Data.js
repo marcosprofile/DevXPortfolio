@@ -49,7 +49,7 @@ export const projectDetails = [
   {
     id: 1,
     project_name: 'ToDo List',
-    project_desc: 'Este projeto foi realizado em busca de ampliar minhas habilidades no Angular, criando aplicação para listar, editar e remover tarefas.',
+    project_desc: 'Este projeto foi realizado em busca de ampliar minhas habilidades no Angular, criando uma aplicação para listar, editar e remover tarefas.',
     tech_stack: ['Angular', 'SASS', 'TypeScript'],
     project_img: MyTodoList,
     project_url: 'https://todo-list-angular-ecru.vercel.app/',
@@ -58,7 +58,7 @@ export const projectDetails = [
   {
     id: 2,
     project_name: 'Form Step',
-    project_desc: 'Este projeto foi realizado com JavaScript apenas para desenvolver um layout de um formulário em fases em busca de não tornar cansativo o preenchimento para o usuário final.',
+    project_desc: 'Este projeto foi realizado com JavaScript apenas para desenvolver um layout de um formulário em fases, em busca de não tornar cansativo o preenchimento para o usuário final.',
     tech_stack: ['HTML', 'CSS', 'JavaScript'],
     project_img: FormStep,
     project_url: 'https://multi-step-form-ten-beta.vercel.app/',
@@ -67,7 +67,7 @@ export const projectDetails = [
   {
     id: 3,
     project_name: 'Consulta de CEP',
-    project_desc: 'Este projeto foi realizado para colocar em prática o consumo de uma API externa para consultar CEP e listar endereços do mesmo através dos dados que são fornecidos através de um JSON. Também realizei a validação para CEP inválido caso a pesquisa seja de um CEP que não existe e validação para CEP com número superior a 8.',
+    project_desc: 'Este projeto foi realizado para colocar em prática o consumo de uma API externa para consultar CEP e listar endereços do mesmo através dos dados que são fornecidos através de um JSON. Também realizei a validação para CEP inválido caso a pesquisa seja de um CEP que não existe e validação para CEP com o total de números superiores a 8.',
     tech_stack: ['HTML', 'CSS', 'JavaScript'],
     project_img: ViaCEP,
     project_url: 'https://via-cep-api-omega.vercel.app/',
