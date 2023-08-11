@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+
+import { motion } from 'framer-motion';
 
 // import global styles
 import {
@@ -17,6 +19,7 @@ import {
 } from '../styles/MySkills.styled';
 
 import { Skills } from '../utils/Data'; 
+import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants';
 
 const MySkills = () => {
   return (
@@ -24,8 +27,20 @@ const MySkills = () => {
       id="Skills"
       top="10%"
       bottom="10%"
+      responsiveLeft="1rem"
+      responsiveRight="1rem"
     >
-      <FlexContainer fullWidthChild gap="5.5rem">
+      <FlexContainer
+        as={motion.div}
+        variants={fadeInLeftVariant}
+        initial="hidden"
+        whileInView="visible"
+
+        responsiveFlex
+        responsiveGap="3rem"
+        responsiveDirection="column-reverse"
+        fullWidthChild
+        gap="5.5rem">
         {/* --left-section-- */}
         <SkillsCardContainer>
           {Skills.map((skill, id) => (
@@ -41,7 +56,11 @@ const MySkills = () => {
         </SkillsCardContainer>
 
         {/* --right-section-- */}
-        <div>
+        <motion.div
+          variants={fadeInRightVariant}
+          initial="hidden"
+          whileInView="visible"
+        >
           <Heading as="h4" size="h4">
             MINHAS SKILLS
           </Heading>
@@ -56,7 +75,7 @@ const MySkills = () => {
           <ParaText>
             Como UI/UX Designer, tenho experiência na projeção de interfaces intuitivas e funcionais com base em pesquisas de mercado, buscando os melhores conceitos de UX e UI para a concepção do produto final. Tenho experiência na construção de protótipos navegáveis, desde wireframe até a construção da UI em alta fidelidade.
           </ParaText>
-        </div>
+        </motion.div>
       </FlexContainer>
     </PaddingContainer>
   )

@@ -16,6 +16,6 @@ export const theme = {
     }
   },
   breakpoints: {
-    mobile: '720px',
+    mobile: '1023px',
   }
 }

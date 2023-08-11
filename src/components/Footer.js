@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { motion } from 'framer-motion';
+
 // import global styles
 import {
   PaddingContainer,
@@ -16,6 +18,12 @@ import {
   FormInput,
 } from './../styles/Footer.styled';
 
+import {
+  fadeInBottomVariant,
+  fadeInLeftVariant,
+  fadeInRightVariant,
+} from '../utils/Variants';
+
 const Footer = () => {
   return (
     <PaddingContainer
@@ -24,7 +32,10 @@ const Footer = () => {
       bottom="10%"
     >
       <Heading
-        as="h4"
+        as={motion.h4}
+        variants={fadeInBottomVariant}
+        initial="hidden"
+        whileInView="visible"
         size="h4"
         align="center"
       >
@@ -32,7 +43,10 @@ const Footer = () => {
       </Heading>
 
       <Heading
-        as="h2"
+        as={motion.h2}
+        variants={fadeInBottomVariant}
+        initial="hidden"
+        whileInView="visible"
         size="h2"
         align="center"
         top=".5rem"
@@ -41,7 +55,12 @@ const Footer = () => {
       </Heading>
 
       <PaddingContainer top="3rem">
-        <FlexContainer justify="center">
+        <FlexContainer
+          as={motion.div}
+          variants={fadeInBottomVariant}
+          initial="hidden"
+          whileInView="visible"
+          justify="center">
           <ContactForm
             action="https://formsubmit.co/marcos.designtech@hotmail.com"
             method="POST"
@@ -80,7 +99,12 @@ const Footer = () => {
               </FormInput>
             </PaddingContainer>
 
-            <FlexContainer justify="center">
+            <FlexContainer
+              as={motion.div}
+              variants={fadeInBottomVariant}
+              initial="hidden"
+              whileInView="visible"
+              justify="center">
               <Submit
                 type="submit"
                 target="_blank"

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { motion } from 'framer-motion';
+
 // import global styles
 import {
   PaddingContainer,
@@ -18,12 +20,24 @@ import {
 } from '../../styles/MyProject.styled';
 
 import { FaGithub } from 'react-icons/fa';
+import {
+  fadeInLeftVariant,
+  fadeInRightVariant,
+} from '../../utils/Variants';
 
 const Project = ({ data }) => {
   return (
-    <FlexContainer fullWidthChild>
+    <FlexContainer
+      gap="6rem"
+      direction={data.reverse ? 'row-reverse' : false}
+      fullWidthChild
+    >
       {/* --left-section-project-- */}
-      <div>
+      <motion.div
+        variants={data.reverse ? fadeInRightVariant : fadeInLeftVariant}
+        initial="hidden"
+        whileInView="visible"
+      >
         <FlexContainer align="center" gap="1rem">
           <Heading as="h3" size="h3" bottom="1rem">
             { data.project_name }
@@ -48,10 +62,16 @@ const Project = ({ data }) => {
 
         <Button href={ data.project_url } target="_blank">Visualizar Website</Button>
 
-      </div>
+      </motion.div>
 
       {/* --right-section-project-- */}
-      <ProjectImageContainer justify="flex-end">
+      <ProjectImageContainer
+        justify={data.reverse ? "flex-start" : "flex-end"}
+        as={motion.div}
+        variants={data.reverse ? fadeInLeftVariant : fadeInRightVariant}
+        initial="hidden"
+        whileInView="visible"
+      >
         <ProjectImage src={ data.project_img } alt={ data.project_name} />
       </ProjectImageContainer>
     </FlexContainer>
