@@ -44,7 +44,7 @@ export const projectDetails = [
   {
     id: 0,
     project_name: 'Fokus',
-    project_desc: 'Neste projeto construi uma aplicação de temporizador estilo Pomodoro do zero, aprendi na prática métodos de manipulação de elementos no DOM, como estilos CSS, imagens e textos, alterei atributos e classes de forma dinâmica com JavaScript, criei eventos de interação com a pessoa usuária e utilizei objetos utilitários do JavaScript.',
+    project_desc: 'Neste projeto construi uma aplicação de temporizador estilo Pomodoro do zero. Aprendi na prática métodos de manipulação de elementos no DOM, como estilos CSS, imagens e textos. Alterei atributos e classes de forma dinâmica com JavaScript. Criei eventos de interação com a pessoa usuária e utilizei objetos utilitários do JavaScript.',
     tech_stack: ['HTML', 'CSS', 'JavaScript'],
     project_img: Fokus,
     project_url: 'https://fokus-eta.vercel.app/',
