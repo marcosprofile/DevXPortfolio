@@ -5,6 +5,7 @@ import {
   FaJsSquare
 } from 'react-icons/fa';
 
+import MochilaDeViagem from '../assets/mochila-de-viagem.png';
 import Fokus from '../assets/fokus.png';
 import LandingPage from '../assets/landingPage.png';
 import SmartBank from '../assets/smartbank.png';
@@ -43,12 +44,21 @@ export const Skills = [
 export const projectDetails = [
   {
     id: 0,
+    project_name: 'Mochila de Viagem',
+    project_desc: 'Neste projeto construi uma aplicação de lista de itens, onde é possível adicionar, atualizar ou remover um item da mochila. Aprendi na prática a interagir com a página e com o LocalStorage. Criei objetos no JavaScript. Registrei dados no LocalStorage. Implementei uma página WEB que armazena dados e entendi o comportamento do LocalStorage.',
+    tech_stack: ['HTML', 'CSS', 'JavaScript'],
+    project_img: MochilaDeViagem,
+    project_url: 'https://mochila-de-viagem-eta-beige.vercel.app/',
+    reverse: false,
+  },
+  {
+    id: 0,
     project_name: 'Fokus',
     project_desc: 'Neste projeto construi uma aplicação de temporizador estilo Pomodoro do zero. Aprendi na prática métodos de manipulação de elementos no DOM, como estilos CSS, imagens e textos. Alterei atributos e classes de forma dinâmica com JavaScript. Criei eventos de interação com a pessoa usuária e utilizei objetos utilitários do JavaScript.',
     tech_stack: ['HTML', 'CSS', 'JavaScript'],
     project_img: Fokus,
     project_url: 'https://fokus-eta.vercel.app/',
-    reverse: false,
+    reverse: true,
   },
   {
     id: 1,
@@ -57,7 +67,7 @@ export const projectDetails = [
     tech_stack: ['React', 'JavaScript', 'styled-components'],
     project_img: LandingPage,
     project_url: 'https://maridocesfinos.vercel.app/',
-    reverse: true,
+    reverse: false,
   },
   {
     id: 2,
@@ -66,7 +76,7 @@ export const projectDetails = [
     tech_stack: ['React', 'JavaScript', 'styled-components'],
     project_img: SmartBank,
     project_url: 'https://smart-bank-snowy.vercel.app/',
-    reverse: false,
+    reverse: true,
   },
   {
     id: 3,
@@ -75,7 +85,7 @@ export const projectDetails = [
     tech_stack: ['Angular', 'SASS', 'TypeScript'],
     project_img: JornadaMilhas,
     project_url: 'https://jornada-milhas-three.vercel.app/',
-    reverse: true,
+    reverse: false,
   },
   {
     id: 4,
@@ -84,7 +94,7 @@ export const projectDetails = [
     tech_stack: ['Angular', 'SASS', 'TypeScript'],
     project_img: MyTodoList,
     project_url: 'https://todo-list-angular-ecru.vercel.app/',
-    reverse: false,
+    reverse: true,
   },
   {
     id: 5,
@@ -93,7 +103,7 @@ export const projectDetails = [
     tech_stack: ['HTML', 'CSS', 'JavaScript'],
     project_img: FormStep,
     project_url: 'https://multi-step-form-ten-beta.vercel.app/',
-    reverse: true,
+    reverse: false,
   },
   {
     id: 6,
@@ -102,7 +112,7 @@ export const projectDetails = [
     tech_stack: ['HTML', 'CSS', 'JavaScript'],
     project_img: ViaCEP,
     project_url: 'https://via-cep-api-omega.vercel.app/',
-    reverse: false,
+    reverse: true,
   },
   {
     id: 7,
@@ -111,7 +121,7 @@ export const projectDetails = [
     tech_stack: ['Figma'],
     project_img: Gooday,
     project_url: 'https://www.behance.net/gallery/174834333/Gooday',
-    reverse: true,
+    reverse: false,
   },
   {
     id: 8,
@@ -120,7 +130,7 @@ export const projectDetails = [
     tech_stack: ['React JS', 'CSS', 'TypeScript'],
     project_img: PrimeFlix,
     project_url: 'https://prime-flix-one.vercel.app/',
-    reverse: false,
+    reverse: true,
   },
   {
     id: 9,
@@ -129,7 +139,7 @@ export const projectDetails = [
     tech_stack: ['HTML', 'Bootstrap', 'CSS'],
     project_img: Finans,
     project_url: 'https://projeto-finans-iota.vercel.app/',
-    reverse: true,
+    reverse: false,
   },
   {
     id: 10,
@@ -138,7 +148,7 @@ export const projectDetails = [
     tech_stack: ['HTML', 'Bootstrap', 'CSS'],
     project_img: Spotify,
     project_url: 'https://spotify-wheat-six.vercel.app/',
-    reverse: false,
+    reverse: true,
   },
 ];
 
