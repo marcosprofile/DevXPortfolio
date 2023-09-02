@@ -72,7 +72,7 @@ const Project = ({ data }) => {
         initial="hidden"
         whileInView="visible"
       >
-        <ProjectImage src={ data.project_img } alt={ data.project_name} />
+        <ProjectImage src={ data.project_img } alt={ data.project_name} draggable="false" />
       </ProjectImageContainer>
     </FlexContainer>
   )
