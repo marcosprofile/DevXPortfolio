@@ -152,7 +152,7 @@ export const projectDetails = [
     reverse: true,
   },
   {
-    id: 11,
+    id: 12,
     project_name: 'Spotify',
     project_desc: 'Este projeto foi realizado no meu início de carreira com bootstrap. Contrui a interface de uma landing page de forma rápida com componentes e classes do bootstrap, onde foi possivel deixar a interface responsiva sem a necessidade de utilizar muitas linhas de código no CSS para obter o mesmo resultado. ',
     tech_stack: ['HTML', 'Bootstrap', 'CSS'],
