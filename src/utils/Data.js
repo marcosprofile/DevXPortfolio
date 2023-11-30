@@ -47,10 +47,10 @@ export const projectDetails = [
   {
     id: 0,
     project_name: 'Virtual Bookcase',
-    project_desc: 'Protótipo criado apenas para organizar minhas leituras e não correr o risco de comprar livros repetidos, sem precisar dar aquela confirmada nos livros da estante física antes de finalizar uma nova compra.',
-    tech_stack: ['Figma'],
+    project_desc: 'Projeto criado apenas para organizar minhas leituras e não correr o risco de comprar livros repetidos, sem precisar dar aquela confirmada nos livros da estante física antes de finalizar uma nova compra.',
+    tech_stack: ['React', 'JavaScript', 'styled-components'],
     project_img: VirtualBookcase,
-    project_url: 'https://www.behance.net/gallery/185371259/Virtual-Bookcase',
+    project_url: 'https://virtual-bookcase.vercel.app/',
     reverse: false,
   },
   {
