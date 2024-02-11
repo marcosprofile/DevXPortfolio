@@ -43,7 +43,7 @@ const Project = ({ data }) => {
             { data.project_name }
           </Heading>
 
-          <IconContainer color="blue" size="2rem" href="https://github.com/marcosprofile" target="_blank">
+          <IconContainer color="blue" size="2rem" href={ data.github } target="_blank">
             <FaGithub />
           </IconContainer>
         </FlexContainer>
