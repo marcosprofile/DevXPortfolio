@@ -25,6 +25,8 @@ import {
   fadeInRightVariant,
 } from '../../utils/Variants';
 
+import { FaLaptop, FaLaptopCode } from "react-icons/fa6";
+
 const Project = ({ data }) => {
   return (
     <FlexContainer
@@ -60,7 +62,15 @@ const Project = ({ data }) => {
           { data.project_desc}
         </ParaText>
 
-        <Button href={ data.project_url } target="_blank">Visualizar Website</Button>
+        <Button href={ data.project_url } target="_blank">
+          <FaLaptop />
+          Visualizar Website
+        </Button>
+
+        <Button href={ data.project_code } target="_blank" marginL="1rem">
+          <FaLaptopCode />
+          Visualizar Código
+        </Button>
 
       </motion.div>
 

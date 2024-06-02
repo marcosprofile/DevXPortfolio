@@ -113,13 +113,16 @@ export const IconContainer = styled.a`
 `;
 
 export const Button = styled.a`
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
   width: max-content;
   padding: 1rem 2rem;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.primary_light};
   border: 1px solid ${({ theme }) => theme.colors.gray};
+  margin-left: ${({ marginL }) => marginL};
   border-radius: 6px;
   cursor: pointer;
   transition: all .2s linear;
