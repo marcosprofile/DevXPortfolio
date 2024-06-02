@@ -115,6 +115,7 @@ export const IconContainer = styled.a`
 export const Button = styled.a`
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: .5rem;
   width: max-content;
   padding: 1rem 2rem;
@@ -135,6 +136,8 @@ export const Button = styled.a`
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 100%;
     text-align: center;
+    margin-left: 0;
+    margin-bottom: 1rem;
   };
 `;
 
