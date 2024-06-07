@@ -8,25 +8,16 @@ import {
   Heading,
   BlueText,
   FlexContainer,
-  Submit,
+  Button,
 } from './../styles/Global.styled';
 
-// import footer styles
-import {
-  ContactForm,
-  FormLabel,
-  FormInput,
-} from './../styles/Footer.styled';
+import { FaWhatsapp, FaRegEnvelope } from "react-icons/fa6";
 
 import { fadeInBottomVariant } from '../utils/Variants';
 
 const Footer = () => {
   return (
-    <PaddingContainer
-      id="Contact"
-      top="5%"
-      bottom="10%"
-    >
+    <PaddingContainer id="Contact" top="5%" bottom="10%">
       <Heading
         as={motion.h4}
         variants={fadeInBottomVariant}
@@ -56,57 +47,16 @@ const Footer = () => {
           variants={fadeInBottomVariant}
           initial="hidden"
           whileInView="visible"
-          justify="center">
-          <ContactForm
-            action="https://formsubmit.co/marcos.designtech@hotmail.com"
-            method="POST"
-          >
-            <PaddingContainer bottom="2rem">
-              <FormLabel>Name:</FormLabel>
-              <FormInput
-                type="text"
-                name="name"
-                placeholder="Digite seu nome..."
-                required
-              >
-              </FormInput>
-            </PaddingContainer>
-            
-            <PaddingContainer bottom="2rem">
-              <FormLabel>E-mail:</FormLabel>
-              <FormInput
-                type="email"
-                name="email"
-                placeholder="Digite seu e-mail..."
-                required
-              >
-              </FormInput>
-            </PaddingContainer>
-            
-            <PaddingContainer bottom="2rem">
-              <FormLabel>Mensagem:</FormLabel>
-              <FormInput
-                as="textarea"
-                name="message"
-                rows="5"
-                placeholder="Digite sua mensagem..."
-                required
-              >
-              </FormInput>
-            </PaddingContainer>
-
-            <FlexContainer
-              as={motion.div}
-              variants={fadeInBottomVariant}
-              initial="hidden"
-              whileInView="visible"
-              justify="center">
-              <Submit
-                type="submit"
-                target="_blank"
-              >Enviar mensagem</Submit>
-            </FlexContainer>
-          </ContactForm>
+          justify="center"
+        >
+          <Button href="https://wa.me/5511954375410?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho..." target="_blank" marginL="1rem">
+            <FaWhatsapp />
+            Whatsapp
+          </Button>
+          <Button href="mailto:marcos.designtech@hotmail.com" target="_blank" marginL="1rem">
+            <FaRegEnvelope />
+            E-mail
+          </Button>
         </FlexContainer>
       </PaddingContainer>
     </PaddingContainer>
