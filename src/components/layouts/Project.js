@@ -41,7 +41,7 @@ const Project = ({ data }) => {
         whileInView="visible"
       >
         <FlexContainer align="center" gap="1rem">
-          <Heading as="h3" size="h3" bottom="1rem">
+          <Heading as="h3" size="h3" bottom=".5rem">
             { data.project_name }
           </Heading>
 
@@ -51,7 +51,7 @@ const Project = ({ data }) => {
         </FlexContainer>
 
         <PaddingContainer top="1rem">
-          <FlexContainer gap="1rem">
+          <FlexContainer gap=".75rem" margin="0 0 1rem 0" responsiveStack>
             { data.tech_stack.map((stack, id) => (
               <TechStackCard key={id}>{stack}</TechStackCard>
             ))}
@@ -62,15 +62,18 @@ const Project = ({ data }) => {
           { data.project_desc}
         </ParaText>
 
-        <Button href={ data.project_url } target="_blank">
-          <FaLaptop />
-          Visualizar Website
-        </Button>
+        <FlexContainer>
+          <Button href={ data.project_url } target="_blank">
+            <FaLaptop />
+            Visualizar Website
+          </Button>
 
-        <Button href={ data.project_code } target="_blank" marginL="1rem">
-          <FaLaptopCode />
-          Visualizar Código
-        </Button>
+          <Button href={ data.project_code } target="_blank" marginL="1rem">
+            <FaLaptopCode />
+            Visualizar Código
+          </Button>
+        </FlexContainer>
+
 
       </motion.div>
 
@@ -81,6 +84,7 @@ const Project = ({ data }) => {
         variants={data.reverse ? fadeInLeftVariant : fadeInRightVariant}
         initial="hidden"
         whileInView="visible"
+        fullWidthChild
       >
         <ProjectImage src={ data.project_img } alt={ data.project_name} draggable="false" />
       </ProjectImageContainer>

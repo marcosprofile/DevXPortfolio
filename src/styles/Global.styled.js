@@ -30,6 +30,7 @@ export const FlexContainer = styled.div`
   justify-content: ${({ justify }) => justify};
   align-items: ${({ align }) => align};
   gap: ${({ gap }) => gap};
+  margin: ${({ margin }) => margin };
 
   & > div {
     flex: ${({ fullWidthChild }) => fullWidthChild && 1};
@@ -37,7 +38,9 @@ export const FlexContainer = styled.div`
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     display: ${({ responsiveFlex }) => responsiveFlex ? 'flex' : 'block'};
-
+    display: ${({ responsiveStack }) => responsiveStack ? 'flex' : 'block'};
+    flex-wrap: ${({ responsiveStack }) => responsiveStack ? 'wrap' : ''};
+    justify-content: ${({ responsiveStack }) => responsiveStack ? 'center' : ''};
     flex-direction: ${({ responsiveDirection }) => responsiveDirection};
     gap: ${({ responsiveGap }) => responsiveGap};
   };
@@ -117,7 +120,8 @@ export const Button = styled.a`
   align-items: center;
   justify-content: center;
   gap: .5rem;
-  width: max-content;
+  width: 100%;
+  max-width: max-content;
   padding: 1rem 2rem;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.white};
@@ -125,6 +129,9 @@ export const Button = styled.a`
   border: 1px solid ${({ theme }) => theme.colors.gray};
   margin-left: ${({ marginL }) => marginL};
   border-radius: 6px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   transition: all .2s linear;
 
@@ -135,6 +142,7 @@ export const Button = styled.a`
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 100%;
+    max-width: unset;
     text-align: center;
     margin-left: 0;
     margin-bottom: 1rem;
