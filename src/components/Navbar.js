@@ -15,11 +15,14 @@ import {
   NavbarContainer,
   Logo,
   MenuIcon,
+  NavLinkContainer,
+  NavLinkBtn
 } from '../styles/Navbar.styled';
 
 import { GiHamburgerMenu} from 'react-icons/gi';
 import { theme } from '../utils/Theme';
 import NavMenu from './layouts/NavMenu';
+import { navLinks } from '../utils/Data';
 
 
 
@@ -50,9 +53,15 @@ const Navbar = () => {
           <Container>
             <FlexContainer justify="space-between" responsiveFlex>
               {/* --left-logo-- */}
-              <Logo>
-                JustA<BlueText>Dev</BlueText>
-              </Logo>
+                <Logo>
+                  JustA<BlueText>Dev</BlueText>
+                </Logo>
+
+                <NavLinkContainer>
+                  {navLinks.map((navigate, id) => (
+                    <NavLinkBtn key={id} href={navigate.href}>{navigate.name}</NavLinkBtn>
+                  ))}
+                </NavLinkContainer>
 
               {/* --right-menu-icon-- */}
               <MenuIcon

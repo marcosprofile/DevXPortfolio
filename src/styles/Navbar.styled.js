@@ -35,6 +35,30 @@ export const NavMenuContainer = styled.div`
   z-index: 1;
 `;
 
+export const NavLinkContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+`;
+
+export const NavLinkBtn = styled.a`
+  color: ${({ theme }) => theme.colors.white};
+  text-decoration: none;
+  padding: .5rem 1.25rem;
+  border-radius: 8rem;
+  border: 1px solid transparent;
+  transition: all .2s ease;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.primary_light };
+    border: 1px solid ${({ theme }) => theme.colors.secondary };
+  }
+`;
+
 export const MenuItem = styled.a`
   color: #fff;
   font-size: 2.5rem;
