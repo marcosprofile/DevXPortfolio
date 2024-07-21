@@ -51,7 +51,7 @@ const Project = ({ data }) => {
         </FlexContainer>
 
         <PaddingContainer top="1rem">
-          <FlexContainer gap="1rem">
+          <FlexContainer gap="1rem" responsiveJustify>
             { data.tech_stack.map((stack, id) => (
               <TechStackCard key={id}>{stack}</TechStackCard>
             ))}
