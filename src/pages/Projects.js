@@ -12,7 +12,7 @@ const Projects = () => {
           top="10%"
           bottom="80%"
           responsiveTop="20%"
-          responsiveLeft="1rem"
+          $responsiveLeft="1rem"
           responsiveRight="1rem"
         >
           <Heading

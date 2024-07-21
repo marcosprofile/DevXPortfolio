@@ -31,8 +31,8 @@ const Project = ({ data }) => {
   return (
     <FlexContainer
       gap="6rem"
-      direction={data.reverse ? 'row-reverse' : false}
-      fullWidthChild
+      $direction={data.reverse ? 'row-reverse' : false}
+      $fullWidthChild="true"
     >
       {/* --left-section-project-- */}
       <motion.div
@@ -42,32 +42,32 @@ const Project = ({ data }) => {
       >
         <FlexContainer align="center" gap="1rem">
           <Heading as="h3" size="h3" bottom="1rem">
-            { data.project_name }
+            {data.project_name}
           </Heading>
 
-          <IconContainer color="blue" size="2rem" href={ data.github } target="_blank">
+          <IconContainer color="blue" size="2rem" href={data.github} target="_blank">
             <FaGithub />
           </IconContainer>
         </FlexContainer>
 
         <PaddingContainer top="1rem">
-          <FlexContainer gap="1rem" responsiveJustify>
-            { data.tech_stack.map((stack, id) => (
+          <FlexContainer gap="1rem" $alignCenter>
+            {data.tech_stack.map((stack, id) => (
               <TechStackCard key={id}>{stack}</TechStackCard>
             ))}
           </FlexContainer>
         </PaddingContainer>
 
         <ParaText top="1.5rem" bottom="2rem">
-          { data.project_desc}
+          {data.project_desc}
         </ParaText>
 
-        <Button href={ data.project_url } target="_blank">
+        <Button href={data.project_url} target="_blank">
           <FaLaptop />
           Visualizar Website
         </Button>
 
-        <Button href={ data.project_code } target="_blank" marginL="1rem">
+        <Button href={data.project_code} target="_blank" $ml="1rem">
           <FaLaptopCode />
           Visualizar Código
         </Button>
@@ -82,7 +82,7 @@ const Project = ({ data }) => {
         initial="hidden"
         whileInView="visible"
       >
-        <ProjectImage src={ data.project_img } alt={ data.project_name} draggable="false" />
+        <ProjectImage src={data.project_img} alt={data.project_name} draggable="false" />
       </ProjectImageContainer>
     </FlexContainer>
   )

@@ -19,9 +19,9 @@ const MyProjects = () => {
       id="Projects"
       top="10%"
       bottom="5%"
-      responsiveTop="20%"
-      responsiveLeft="1rem"
-      responsiveRight="1rem"
+      $responsiveTop="20%"
+      $responsiveLeft="1rem"
+      $responsiveRight="1rem"
     >
       <Heading
         as={motion.h4}

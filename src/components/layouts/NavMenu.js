@@ -42,7 +42,7 @@ const NavMenu = ({ setOpenMenu }) => {
       >
         <FlexContainer
           justify="flex-end"
-          responsiveFlex
+          responsiveFlex="true"
         >
           <MenuIcon
             as={motion.a}
@@ -61,9 +61,9 @@ const NavMenu = ({ setOpenMenu }) => {
         {navLinks.map((link, id) => (
           <FlexContainer
             key={id}
-            direction="column"
+            $direction="column"
             align="center"
-            responsiveFlex
+            $responsiveFlex="true"
           >
             <MenuItem
               as={motion.a}

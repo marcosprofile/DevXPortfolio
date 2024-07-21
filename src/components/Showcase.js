@@ -37,11 +37,11 @@ const Showcase = () => {
       right="10%"
       top="12%"
       bottom="10%"
-      responsiveLeft="1rem"
-      responsiveRight="1rem"
-      responsiveTop="8rem"
+      $responsiveLeft="1rem"
+      $responsiveRight="1rem"
+      $responsiveTop="8rem"
     >
-      <FlexContainer align="left" fullWidthChild>
+      <FlexContainer align="left" $fullWidthChild="true">
         {/* --left-content-- */}
         <motion.div
           variants={fadeInLeftVariant}
@@ -65,7 +65,7 @@ const Showcase = () => {
           </ParaText>
 
           {/* --social-icons-- */}
-          <FlexContainer gap="1.25rem" responsiveFlex>
+          <FlexContainer gap="1.25rem" $responsiveFlex="true">
             <IconContainer color="white" size="2rem" href="https://github.com/marcosprofile" target="_blank">
               <BsGithub />
             </IconContainer>

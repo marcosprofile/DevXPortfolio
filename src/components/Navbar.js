@@ -43,15 +43,16 @@ const Navbar = () => {
   return (
     <div>
       <NavbarContainer
-        bgColor={ sticky ? theme.colors.primary : 'transparent' }>
+        $bgColor={ sticky ? theme.colors.primary : 'transparent' }
+      >
         <PaddingContainer
           top="1.2rem"
           bottom="1.2rem"
-          responsiveLeft="1rem"
-          responsiveRight="1rem"
+          $responsiveLeft="1rem"
+          $responsiveRight="1rem"
         >
           <Container>
-            <FlexContainer justify="space-between" responsiveFlex>
+            <FlexContainer justify="space-between" $responsiveFlex="true">
               {/* --left-logo-- */}
                 <Logo>
                   JustA<BlueText>Dev</BlueText>

@@ -18,7 +18,7 @@ import {
   SkillsCard,
 } from '../styles/MySkills.styled';
 
-import { Skills } from '../utils/Data'; 
+import { Skills } from '../utils/Data';
 import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants';
 
 const MySkills = () => {
@@ -27,8 +27,8 @@ const MySkills = () => {
       id="Skills"
       top="10%"
       bottom="10%"
-      responsiveLeft="1rem"
-      responsiveRight="1rem"
+      $responsiveLeft="1rem"
+      $responsiveRight="1rem"
     >
       <FlexContainer
         as={motion.div}
@@ -36,10 +36,10 @@ const MySkills = () => {
         initial="hidden"
         whileInView="visible"
 
-        responsiveFlex
-        responsiveGap="3rem"
-        responsiveDirection="column-reverse"
-        fullWidthChild
+        $responsiveFlex="true"
+        $responsiveGap="3rem"
+        $responsiveDirection="column-reverse"
+        $fullWidthChild="true"
         gap="5.5rem">
         {/* --left-section-- */}
         <SkillsCardContainer>

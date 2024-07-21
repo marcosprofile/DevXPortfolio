@@ -49,11 +49,11 @@ const Footer = () => {
           whileInView="visible"
           justify="center"
         >
-          <Button href="https://wa.me/5511954375410?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho..." target="_blank" marginL="1rem">
+          <Button href="https://wa.me/5511954375410?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho..." target="_blank" $ml="1rem">
             <FaWhatsapp />
             Whatsapp
           </Button>
-          <Button href="mailto:marcos.designtech@hotmail.com" target="_blank" marginL="1rem">
+          <Button href="mailto:marcos.designtech@hotmail.com" target="_blank" $ml="1rem">
             <FaRegEnvelope />
             E-mail
           </Button>

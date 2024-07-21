@@ -17,29 +17,29 @@ export const PaddingContainer = styled.div`
   padding-right: ${({ right }) => right};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    padding-top: ${({ responsiveTop }) => responsiveTop};
-    padding-bottom: ${({ responsiveBottom }) => responsiveBottom};
-    padding-left: ${({ responsiveLeft }) => responsiveLeft};
-    padding-right: ${({ responsiveRight }) => responsiveRight};
+    padding-top: ${({ $responsiveTop }) => $responsiveTop};
+    padding-bottom: ${({ $responsiveBottom }) => $responsiveBottom};
+    padding-left: ${({ $responsiveLeft }) => $responsiveLeft};
+    padding-right: ${({ $responsiveRight }) => $responsiveRight};
   };
 `;
 
 export const FlexContainer = styled.div`
   display: flex;
-  flex-direction: ${({ direction }) => direction};
+  flex-direction: ${({ $direction }) => $direction};
   justify-content: ${({ justify }) => justify};
   align-items: ${({ align }) => align};
   gap: ${({ gap }) => gap};
 
   & > div {
-    flex: ${({ fullWidthChild }) => fullWidthChild && 1};
+    flex: ${({ $fullWidthChild }) => $fullWidthChild && 1};
   };
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    display: ${({ responsiveFlex }) => responsiveFlex ? 'flex' : 'block'};
-    justify-content: ${({ responsiveJustify }) => responsiveJustify ? 'center' : 'start'};
-    flex-direction: ${({ responsiveDirection }) => responsiveDirection};
-    gap: ${({ responsiveGap }) => responsiveGap};
+    display: ${({ $responsiveFlex }) => $responsiveFlex ? 'flex' : 'block'};
+    text-align: ${({ $alignCenter }) => $alignCenter ? 'center' : ''};
+    flex-direction: ${({ $responsiveDirection }) => $responsiveDirection};
+    gap: ${({ $responsiveGap }) => $responsiveGap};
   };
 `;
 
@@ -47,10 +47,10 @@ export const Heading = styled(PaddingContainer)`
   color: ${({ theme }) => theme.colors.white};
   text-align: ${({ align }) => align};
   font-size: ${({ size }) => {
-    switch(size) {
+    switch (size) {
       case 'h1':
         return '4.5rem';
-      
+
       case 'h2':
         return '3rem';
 
@@ -67,23 +67,23 @@ export const Heading = styled(PaddingContainer)`
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: ${({ size }) => {
-      switch(size) {
-        case 'h1':
-          return '4.5rem';
-        
-        case 'h2':
-          return '2rem';
+    switch (size) {
+      case 'h1':
+        return '4.5rem';
 
-        case 'h3':
-          return '1.5rem';
+      case 'h2':
+        return '2rem';
 
-        case 'h4':
-          return '1rem';
+      case 'h3':
+        return '1.5rem';
 
-        default:
-          return;
-      };
-    }};
+      case 'h4':
+        return '1rem';
+
+      default:
+        return;
+    };
+  }};
   };
 `;
 
@@ -99,7 +99,7 @@ export const IconContainer = styled.a`
   font-size: ${({ size }) => size};
   cursor: pointer;
   color: ${({ color, theme }) => {
-    switch(color) {
+    switch (color) {
       case 'white':
         return theme.colors.white;
 
@@ -123,7 +123,7 @@ export const Button = styled.a`
   color: ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.primary_light};
   border: 1px solid ${({ theme }) => theme.colors.gray};
-  margin-left: ${({ marginL }) => marginL};
+  margin-left: ${({ $ml }) => $ml};
   border-radius: 6px;
   cursor: pointer;
   transition: all .2s linear;
