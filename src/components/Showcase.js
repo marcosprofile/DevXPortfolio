@@ -61,7 +61,7 @@ const Showcase = () => {
             Sou <BlueText>UI/UX Designer & Frontend Developer</BlueText>
           </Heading>
           <ParaText as="p" top="2rem" bottom="4rem">
-            UI/UX Designer com 2 anos de experiência e com conhecimento em Frontend, evoluindo sempre para desenvolver interfaces responsivas e estruturadas.
+            Sou um UX/UI Designer e Desenvolvedor Front-end apaixonado por tecnologia. Com experiência em Figma e habilidades em desenvolvimento Front-end, procuro sempre unir design intuitivo e código eficiente.
           </ParaText>
 
           {/* --social-icons-- */}
