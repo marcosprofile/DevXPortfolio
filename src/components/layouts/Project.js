@@ -28,6 +28,8 @@ import {
 import { FaLaptop, FaLaptopCode } from "react-icons/fa6";
 
 const Project = ({ data }) => {
+  const isDisabled = !data.project_url;
+
   return (
     <FlexContainer
       gap="6rem"
@@ -62,12 +64,21 @@ const Project = ({ data }) => {
           {data.project_desc}
         </ParaText>
 
-        <Button href={data.project_url} target="_blank">
-          <FaLaptop />
-          Visualizar Website
-        </Button>
+          <Button 
+            href={data.project_url || '#'}
+            target={data.project_url ? '_blank' : undefined}
+            className={isDisabled ? 'disabled' : ''}
+            $mr="1rem"
+            title={isDisabled ? 'Website indisponível' : ''}
+            onClick={(e) => {
+              if (isDisabled) e.preventDefault();
+            }}
+          >
+            <FaLaptop />
+            Visualizar Website
+          </Button>
 
-        <Button href={data.project_code} target="_blank" $ml="1rem">
+        <Button href={data.project_code} target="_blank">
           <FaLaptopCode />
           Visualizar Código
         </Button>

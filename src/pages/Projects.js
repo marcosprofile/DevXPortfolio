@@ -1,6 +1,5 @@
 import React from 'react'
-import { BlueText, Container, MainBody, PaddingContainer } from '../styles/Global.styled'
-import { Heading } from './../styles/Global.styled';
+import { BlueText, Container, MainBody, PaddingContainer, Heading } from '../styles/Global.styled';
 import { motion } from 'framer-motion';
 import { fadeInTopVariant } from '../utils/Variants';
 

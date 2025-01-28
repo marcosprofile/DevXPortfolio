@@ -123,7 +123,7 @@ export const Button = styled.a`
   color: ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.primary_light};
   border: 1px solid ${({ theme }) => theme.colors.gray};
-  margin-left: ${({ $ml }) => $ml};
+  margin-right: ${({ $mr }) => $mr};
   border-radius: 6px;
   cursor: pointer;
   transition: all .2s linear;

@@ -26,3 +26,13 @@ body {
   background-image: linear-gradient(#7EADFC, #131C13);
   border-radius: 10px;
 }
+
+.disabled {
+  opacity: .4;
+
+  &:hover {
+    background-color: transparent !important;
+    color: #FFF !important;
+    cursor: not-allowed;
+  }
+}

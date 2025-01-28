@@ -102,7 +102,6 @@ export const projectDetails = [
     project_img: CrudAngular,
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/CRUD-Angular',
-    project_url: 'https://github.com/marcosprofile/CRUD-Angular',
     reverse: true,
   },
   {
