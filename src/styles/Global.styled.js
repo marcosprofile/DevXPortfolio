@@ -30,6 +30,7 @@ export const FlexContainer = styled.div`
   justify-content: ${({ justify }) => justify};
   align-items: ${({ align }) => align};
   gap: ${({ gap }) => gap};
+  flex-wrap: ${({ flexWrap }) => flexWrap};
 
   & > div {
     flex: ${({ $fullWidthChild }) => $fullWidthChild && 1};
@@ -93,6 +94,7 @@ export const BlueText = styled.span`
 
 export const ParaText = styled(PaddingContainer)`
   color: ${({ theme }) => theme.colors.para_text_color};
+  max-width: ${({ mWidth }) => mWidth };
 `;
 
 export const IconContainer = styled.a`
@@ -158,3 +160,27 @@ export const FadeImage = styled.img`
     display: none;
   };
 `;
+
+export const Chip = styled.div`
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  width: max-content;
+  color: #E0E0E0;
+  padding: 1.25rem 1rem;
+  border-radius: 5rem;
+  background: linear-gradient(160deg, rgba(217, 217, 217, 0.04) 13.17%, rgba(255, 255, 255, 0.01) 97.91%);
+  font-size: .875rem;
+  font-weight: 600;
+  box-shadow: 0px 4px 20px 0px rgba(47, 24, 108, 0.10), 0px 4px 20px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  height: 40px;
+  cursor: default;
+`
+
+export const Image = styled.img`
+  width: ${({ width }) => width};
+  height: ${({ height }) => height};
+  object-fit: cover;
+`

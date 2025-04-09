@@ -7,11 +7,13 @@ import Footer from '../components/Footer'
 
 import TopFadeImage from '../assets/top.png';
 import LeftFadeImage from '../assets/left.png';
+import ScrollProgressBar from '../components/ScrollProgressBar'
 
 const Home = () => {
   return (
     <MainBody>
       <Container>
+        <ScrollProgressBar />
         <Showcase />
         <MySkills />
         <MyProjects />

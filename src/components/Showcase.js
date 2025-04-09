@@ -8,64 +8,76 @@ import {
   ParaText,
   BlueText,
   IconContainer,
+  Chip,
+  Image
 } from '../styles/Global.styled';
-
-// importing showcase styles
-import {
-  ShowcaseImageCard,
-  ShowcaseParticleContainer,
-  Particle,
-} from '../styles/Showcase.styled'
 
 // importing react-icons
 import { BsGithub, BsBehance, BsLinkedin, BsEnvelope } from 'react-icons/bs';
 
-// importing assets
-import ShowcaseImg from '../assets/showcase-img.png';
-import BackgroundImg from '../assets/particle.png';
+import CheckBlue from '../assets/check-blue.svg';
 
-import {
-  fadeInLeftVariant,
-  fadeInRightVariant,
-} from '../utils/Variants';
+import { fadeInLeftVariant } from '../utils/Variants';
 
 const Showcase = () => {
   return (
     <PaddingContainer
       id="Home"
-      left="3%"
-      right="10%"
       top="12%"
       bottom="10%"
       $responsiveLeft="1rem"
       $responsiveRight="1rem"
       $responsiveTop="8rem"
     >
-      <FlexContainer align="left" $fullWidthChild="true">
+      <FlexContainer align="center" $fullWidthChild="true">
         {/* --left-content-- */}
         <motion.div
           variants={fadeInLeftVariant}
           initial="hidden"
           whileInView="visible"
         >
-          <Heading as="h4" size="h4">Olá!</Heading>
           <Heading
-            as="h2"
-            size="h2"
+            as="h3"
+            size="h3"
             top=".5rem"
             bottom="1rem"
           >
-            Eu sou <BlueText>Marcos Ferreira</BlueText>
+            Olá! Eu sou <BlueText>Marcos Laurindo Ferreira</BlueText>
           </Heading>
-          <Heading as="h3" size="h3">
-            Sou <BlueText>UI/UX Designer & Frontend Developer</BlueText>
+          <Heading as="h1" size="h1">
+            <BlueText>UI/UX Developer</BlueText>
           </Heading>
-          <ParaText as="p" top="2rem" bottom="4rem">
+          <ParaText as="p" top="2rem" bottom="4rem" mWidth="600px">
             Sou um UX/UI Designer e Desenvolvedor Front-end apaixonado por tecnologia. Com experiência em Figma e habilidades em desenvolvimento Front-end, procuro sempre unir design intuitivo e código eficiente.
           </ParaText>
 
+          <PaddingContainer bottom="3.5rem">
+            <FlexContainer justify="center" gap="1rem" flexWrap="wrap" $responsiveFlex>
+              <Chip>
+                <Image src={CheckBlue} alt="Check icon" />
+                Design System
+              </Chip>
+              <Chip>
+                <Image src={CheckBlue} alt="Check icon" />
+                Product
+              </Chip>
+              <Chip>
+                <Image src={CheckBlue} alt="Check icon" />
+                Website
+              </Chip>
+              <Chip>
+                <Image src={CheckBlue} alt="Check icon" />
+                Figma
+              </Chip>
+              <Chip>
+                <Image src={CheckBlue} alt="Check icon" />
+                Framer
+              </Chip>
+            </FlexContainer>
+          </PaddingContainer>
+
           {/* --social-icons-- */}
-          <FlexContainer gap="1.25rem" $responsiveFlex="true">
+          <FlexContainer justify="center" gap="1.25rem" $responsiveFlex="true">
             <IconContainer color="white" size="2rem" href="https://github.com/marcosprofile" target="_blank">
               <BsGithub />
             </IconContainer>
@@ -80,72 +92,6 @@ const Showcase = () => {
             </IconContainer>
           </FlexContainer>
         </motion.div>
-
-        {/* --right-content-- */}
-        <FlexContainer
-          as={motion.div}
-          variants={fadeInRightVariant}
-          initial="hidden"
-          whileInView="visible"
-          justify="flex-end"
-        >
-          <ShowcaseParticleContainer>
-            <ShowcaseImageCard>
-              <img src={ShowcaseImg} alt="showcase" />
-            </ShowcaseImageCard>
-            <Particle
-              as={motion.img}
-              animate={{
-                x: [0, 100, 0],
-                rotate: 360,
-                scale: [1, .5, 1]
-              }}
-              transition={{
-                duration: 20,
-                repeat: Infinity
-              }}
-              src={BackgroundImg}
-              alt="particle"
-              top="-80px"
-              left="20px"
-              rotate="60deg"
-            />
-            <Particle
-              as={motion.img}
-              animate={{
-                y: [0, 100, 0],
-                rotate: 360,
-                scale: [1, .8, 1]
-              }}
-              transition={{
-                duration: 18,
-                repeat: Infinity
-              }}
-              src={BackgroundImg}
-              alt="particle"
-              top="50px"
-              right="-70px"
-              rotate="0deg"
-            />
-            <Particle
-              as={motion.img}
-              animate={{
-                x: [0, -100, 0],
-                rotate: 360,
-                scale: [1, .9, 1]
-              }}
-              transition={{
-                duration: 15,
-                repeat: Infinity
-              }}
-              src={BackgroundImg}
-              alt="particle"
-              bottom="10px"
-              left="-70px"
-              rotate="50deg"
-            />
-          </ShowcaseParticleContainer>
-        </FlexContainer>
       </FlexContainer>
     </PaddingContainer>
   )

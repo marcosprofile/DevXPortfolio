@@ -8,6 +8,10 @@ export const NavbarContainer = styled.div`
   z-index: 10;
   transition: all .2s ease-in;
   background-color: ${({ $bgColor }) => $bgColor};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    display: none !important;
+  }
 `;
 
 export const Logo = styled.p`
