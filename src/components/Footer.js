@@ -53,7 +53,7 @@ const Footer = () => {
             <FaWhatsapp />
             Whatsapp
           </Button>
-          <Button href="mailto:marcos.designtech@hotmail.com" target="_blank">
+          <Button href="mailto:marcos.laurindo@marcotech.dev.br" target="_blank">
             <FaRegEnvelope />
             E-mail
           </Button>
