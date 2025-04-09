@@ -87,7 +87,7 @@ const Showcase = () => {
             <IconContainer color="white" size="2rem" href="https://www.linkedin.com/in/marcosdesigntech/" target="_blank">
               <BsLinkedin />
             </IconContainer>
-            <IconContainer color="white" size="2rem" href="mailto:marcos.designtech@hotmail.com">
+            <IconContainer color="white" size="2rem" href="mailto:marcos.laurindo@marcotech.dev.br">
               <BsEnvelope />
             </IconContainer>
           </FlexContainer>
