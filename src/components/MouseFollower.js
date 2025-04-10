@@ -1,7 +1,9 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { motion, useMotionValue, useSpring, useAnimation } from "framer-motion"
 
 export default function MouseFollower() {
+  const [ isVisible, setIsVisible ] = useState(true)
+
   const x = useMotionValue(0)
   const y = useMotionValue(0)
 
@@ -9,6 +11,17 @@ export default function MouseFollower() {
   const smoothY = useSpring(y, { stiffness: 300, damping: 30 })
 
   const controls = useAnimation()
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsVisible(window.innerWidth >= 1200)
+    }
+
+    checkScreenSize()
+
+    window.addEventListener("resize", checkScreenSize)
+    return () => window.removeEventListener("resize", checkScreenSize)
+  }, [])
 
   useEffect(() => {
     const move = (e) => {
@@ -39,7 +52,9 @@ export default function MouseFollower() {
       window.removeEventListener("mousedown", handleMouseDown)
       window.removeEventListener("mouseup", handleMouseUp)
     }
-  }, [])
+  }, [isVisible, controls, x, y])
+
+  if (!isVisible) return null
 
   return (
     <motion.div

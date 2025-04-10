@@ -27,7 +27,6 @@ const Showcase = () => {
       bottom="10%"
       $responsiveLeft="1rem"
       $responsiveRight="1rem"
-      $responsiveTop="8rem"
     >
       <FlexContainer align="center" $fullWidthChild="true">
         {/* --left-content-- */}
