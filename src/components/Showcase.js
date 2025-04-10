@@ -13,7 +13,7 @@ import {
 } from '../styles/Global.styled';
 
 // importing react-icons
-import { BsGithub, BsBehance, BsLinkedin, BsEnvelope } from 'react-icons/bs';
+import { BsGithub, BsBehance, BsLinkedin, BsEnvelope, BsAward } from 'react-icons/bs';
 
 import CheckBlue from '../assets/check-blue.svg';
 
@@ -88,6 +88,9 @@ const Showcase = () => {
             </IconContainer>
             <IconContainer color="white" size="2rem" href="mailto:marcos.laurindo@marcotech.dev.br">
               <BsEnvelope />
+            </IconContainer>
+            <IconContainer color="white" size="2rem" href="https://cursos.alura.com.br/user/marcos-laurindo1997" target="_blank">
+              <BsAward />
             </IconContainer>
           </FlexContainer>
         </motion.div>
