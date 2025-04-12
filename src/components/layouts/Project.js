@@ -28,7 +28,8 @@ import {
 import { FaLaptop, FaLaptopCode } from "react-icons/fa6";
 
 const Project = ({ data }) => {
-  const isDisabled = !data.project_url;
+  const isDisabledPreview = !data.project_url;
+  const isDisabledCode = !data.project_code;
 
   return (
     <FlexContainer
@@ -64,22 +65,31 @@ const Project = ({ data }) => {
           {data.project_desc}
         </ParaText>
 
-          <Button 
-            href={data.project_url || '#'}
-            target={data.project_url ? '_blank' : undefined}
-            className={isDisabled ? 'disabled' : ''}
-            $mr="1rem"
-            title={isDisabled ? 'Website indisponível' : ''}
-            onClick={(e) => {
-              if (isDisabled) e.preventDefault();
-            }}
-          >
-            <FaLaptop />
-            Visualizar Website
-          </Button>
-
-        <Button href={data.project_code} target="_blank">
+        <Button
+          href={data.project_url || '#'}
+          target={data.project_url ? '_blank' : undefined}
+          className={isDisabledPreview ? 'disabled' : ''}
+          $mr="1rem"
+          title={isDisabledPreview ? 'Website indisponível' : ''}
+          onClick={(e) => {
+            if (isDisabledPreview) e.preventDefault();
+          }}
+        >
           <FaLaptopCode />
+          Visualizar Website
+        </Button>
+
+        <Button
+          href={data.project_code || '#'}
+          target={data.project_code ? '_blank' : undefined}
+          className={isDisabledCode ? 'disabled' : ''}
+          $mr="1rem"
+          title={isDisabledCode ? 'Código indisponível' : ''}
+          onClick={(e) => {
+            if (isDisabledCode) e.preventDefault();
+          }}
+        >
+          <FaLaptop />
           Visualizar Código
         </Button>
 
