@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-export const NavbarContainer = styled.div`
+export const NavbarContainer = styled.nav`
   position: fixed;
   width: 100%;
   top: 0;
@@ -8,16 +8,6 @@ export const NavbarContainer = styled.div`
   z-index: 10;
   transition: all .2s ease-in;
   background-color: ${({ $bgColor }) => $bgColor};
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    display: none !important;
-  }
-`;
-
-export const Logo = styled.p`
-  font-size: 1.7rem;
-  font-weight: ${({ theme }) => theme.fonts.weight.medium};
-  color: ${({ theme }) => theme.colors.white};
 `;
 
 export const MenuIcon = styled.a`
@@ -43,10 +33,6 @@ export const NavLinkContainer = styled.div`
   display: flex;
   align-items: center;
   gap: .5rem;
-
-  @media (max-width: 1024px) {
-    display: none;
-  }
 `;
 
 export const NavLinkBtn = styled.a`
@@ -60,6 +46,11 @@ export const NavLinkBtn = styled.a`
   &:hover {
     background-color: ${({ theme }) => theme.colors.primary_light };
     border: 1px solid ${({ theme }) => theme.colors.secondary };
+  }
+
+  @media (max-width: 600px) {
+    font-size: .875rem;
+    padding: .5rem .75rem;
   }
 `;
 

@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 // import global styles
 import {
@@ -10,26 +10,26 @@ import {
   ParaText,
   IconContainer,
   Button,
-} from './../../styles/Global.styled';
+} from './../../styles/Global.styled'
 
 // import project styles
 import {
   TechStackCard,
   ProjectImageContainer,
   ProjectImage,
-} from '../../styles/MyProject.styled';
+} from '../../styles/MyProject.styled'
 
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa'
 import {
   fadeInLeftVariant,
   fadeInRightVariant,
-} from '../../utils/Variants';
+} from '../../utils/Variants'
 
-import { FaLaptop, FaLaptopCode } from "react-icons/fa6";
+import { FaLaptop, FaLaptopCode } from "react-icons/fa6"
 
 const Project = ({ data }) => {
-  const isDisabledPreview = !data.project_url;
-  const isDisabledCode = !data.project_code;
+  const isDisabledPreview = !data.project_url
+  const isDisabledCode = !data.project_code
 
   return (
     <FlexContainer
@@ -72,7 +72,7 @@ const Project = ({ data }) => {
           $mr="1rem"
           title={isDisabledPreview ? 'Website indisponível' : ''}
           onClick={(e) => {
-            if (isDisabledPreview) e.preventDefault();
+            if (isDisabledPreview) e.preventDefault()
           }}
         >
           <FaLaptopCode />
@@ -86,7 +86,7 @@ const Project = ({ data }) => {
           $mr="1rem"
           title={isDisabledCode ? 'Código indisponível' : ''}
           onClick={(e) => {
-            if (isDisabledCode) e.preventDefault();
+            if (isDisabledCode) e.preventDefault()
           }}
         >
           <FaLaptop />

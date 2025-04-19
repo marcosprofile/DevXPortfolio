@@ -1,17 +1,17 @@
-import React from 'react';
+import React from 'react'
 
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 // import global styles
 import {
   PaddingContainer,
   Heading,
   BlueText,
-} from './../styles/Global.styled';
-import Project from './layouts/Project';
+} from './../styles/Global.styled'
+import Project from './layouts/Project'
 
-import { projectDetails } from '../utils/Data';
-import { fadeInTopVariant } from '../utils/Variants';
+import { projectDetails } from '../utils/Data'
+import { fadeInTopVariant } from '../utils/Variants'
 
 const MyProjects = () => {
   return (
@@ -30,7 +30,7 @@ const MyProjects = () => {
         whileInView="visible"
         size="h4"
       >
-        MEUS PROJETOS
+        PROJETOS
       </Heading>
 
       <Heading

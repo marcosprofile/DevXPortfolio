@@ -12,7 +12,7 @@ export const fadeInLeftVariant = {
       duration: 1,
     }
   }
-};
+}
 
 export const fadeInRightVariant = {
   hidden: {
@@ -28,7 +28,7 @@ export const fadeInRightVariant = {
       duration: 1,
     }
   }
-};
+}
 
 export const fadeInTopVariant = {
   hidden: {
@@ -44,7 +44,7 @@ export const fadeInTopVariant = {
       duration: 1,
     }
   }
-};
+}
 
 export const fadeInBottomVariant = {
   hidden: {
@@ -60,7 +60,7 @@ export const fadeInBottomVariant = {
       duration: 1,
     }
   }
-};
+}
 
 export const slideInLeft = {
   hidden: {
@@ -85,7 +85,7 @@ export const slideInLeft = {
       duration: .5,
     }
   }
-};
+}
 
 export const slideInRight = {
   hidden: {
@@ -110,4 +110,4 @@ export const slideInRight = {
       duration: .5,
     }
   }
-};
+}

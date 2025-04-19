@@ -1,26 +1,20 @@
 import React from 'react'
 import { Container, FadeImage, MainBody } from '../styles/Global.styled'
-import Showcase from '../components/Showcase'
-import MySkills from '../components/MySkills'
-import Contact from '../components/Contact'
+import MyProjects from '../components/MyProjects'
 
 import TopFadeImage from '../assets/top.png'
 import LeftFadeImage from '../assets/left.png'
 import ScrollProgressBar from '../components/ScrollProgressBar'
 import MouseFollower from '../components/MouseFollower'
 import Footer from '../components/Footer'
-import GridProjects from '../components/GridProjects'
 
-const Home = () => {
+const Projects = () => {
   return (
     <MainBody>
       <Container>
         <ScrollProgressBar />
         <MouseFollower />
-        <Showcase />
-        <MySkills />
-        <GridProjects />
-        <Contact />
+        <MyProjects />
         <Footer />
       </Container>
 
@@ -30,4 +24,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Projects

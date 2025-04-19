@@ -3,17 +3,16 @@ import {
   FaReact,
   FaGitSquare,
   FaJsSquare
-} from 'react-icons/fa';
+} from 'react-icons/fa'
 
-import LandingPage from '../assets/projetos/landing-page.png';
-import Gemini from '../assets/projetos/gemini.png';
-import AtomicWork from '../assets/projetos/atomicwork.png';
-import DesignAgency from '../assets/projetos/design_agency.png';
-import CrudAngular from '../assets/projetos/crud_angular_v17.png';
-import VirtualBookcase from '../assets/projetos/virtual_bookcase.jpg';
-import JornadaMilhas from '../assets/projetos/jornada_milhas.png';
-import MyTodoList from '../assets/projetos/my_todo_list.png';
-import PrimeFlix from '../assets/projetos/prime_flix.png';
+import Gemini from '../assets/projetos/gemini.png'
+import AtomicWork from '../assets/projetos/atomicwork.png'
+import DesignAgency from '../assets/projetos/design_agency.png'
+import CrudAngular from '../assets/projetos/crud_angular_v17.png'
+import VirtualBookcase from '../assets/projetos/virtual_bookcase.jpg'
+import JornadaMilhas from '../assets/projetos/jornada_milhas.png'
+import MyTodoList from '../assets/projetos/my_todo_list.png'
+import PrimeFlix from '../assets/projetos/prime_flix.png'
 
 export const Skills = [
   {
@@ -36,7 +35,7 @@ export const Skills = [
     tech: 'JavaScript',
     icon: <FaJsSquare />
   },
-];
+]
 
 export const navLinks = [
   {
@@ -46,12 +45,12 @@ export const navLinks = [
   },
   {
     id: 1,
-    name: 'Minhas Skills',
+    name: 'Skills',
     href: '#Skills'
   },
   {
     id: 2,
-    name: 'Meus Projetos',
+    name: 'Projetos',
     href: '#Projects'
   },
   {
@@ -59,7 +58,40 @@ export const navLinks = [
     name: 'Contato',
     href: '#Contact'
   },
-];
+]
+
+export const GridSixProjects = [
+  {
+    id: 0,
+    name: 'Gemini UI',
+    image: Gemini
+  },
+  {
+    id: 1,
+    name: 'Atomicwork',
+    image: AtomicWork
+  },
+  {
+    id: 2,
+    name: 'Design Agency',
+    image: DesignAgency
+  },
+  {
+    id: 3,
+    name: 'Virtual Bookcase',
+    image: VirtualBookcase
+  },
+  {
+    id: 4,
+    name: 'Jornada Milhas',
+    image: JornadaMilhas
+  },
+  {
+    id: 5,
+    name: 'ToDo Lista',
+    image: MyTodoList
+  },
+]
 
 export const projectDetails = [
   {
@@ -149,4 +181,4 @@ export const projectDetails = [
     project_url: 'https://prime-flix-one.vercel.app/',
     reverse: false,
   }
-];
+]

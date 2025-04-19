@@ -1,25 +1,25 @@
-import React from 'react';
+import React from 'react'
 
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 // import global styles
 import {
   FlexContainer,
   PaddingContainer,
   Heading,
-  IconContainer,
   ParaText,
   BlueText,
-} from '../styles/Global.styled';
+} from '../styles/Global.styled'
 
 // import My Skills styles
 import {
   SkillsCardContainer,
   SkillsCard,
-} from '../styles/MySkills.styled';
+  IconContainer
+} from '../styles/MySkills.styled'
 
-import { Skills } from '../utils/Data';
-import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants';
+import { Skills } from '../utils/Data'
+import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants'
 
 const MySkills = () => {
   return (
@@ -45,7 +45,7 @@ const MySkills = () => {
         <SkillsCardContainer>
           {Skills.map((skill, id) => (
             <SkillsCard key={id}>
-              <IconContainer size="5rem" color="blue">
+              <IconContainer size="5rem">
                 {skill.icon}
               </IconContainer>
               <Heading as="h4" size="h4">
@@ -70,10 +70,10 @@ const MySkills = () => {
           </Heading>
 
           <ParaText top="2rem" bottom="1.5rem">
-            Como desenvolvedor, tenho experiência em desenvolvimento front-end. Tenho conhecimento em JavaScrip, React, Angular, HTML, CSS e SASS. Tenho experiência na construção de interfaces de responsivas. Com conhecimento no uso do React, posso criar interfaces escaláveis e de fácil manutenção. Isso me permite criar um código eficiente e sustentável que pode se adequar às necessidades de mudança de um negócio.
+            Como UX/UI Designer tenho experiência na projeção de interfaces intuitivas e funcionais com base em pesquisas de mercado, buscando os melhores conceitos de UX e UI para a concepção do produto final. Tenho experiência na construção de protótipos navegáveis, desde wireframe até a construção da UI em alta fidelidade.
           </ParaText>
           <ParaText>
-            Como UI/UX Designer, tenho experiência na projeção de interfaces intuitivas e funcionais com base em pesquisas de mercado, buscando os melhores conceitos de UX e UI para a concepção do produto final. Tenho experiência na construção de protótipos navegáveis, desde wireframe até a construção da UI em alta fidelidade.
+            Como desenvolvedor tenho experiência em desenvolvimento front-end, com conhecimento em JavaScrip, React, Angular, HTML, CSS e SASS. Tenho experiência na construção de interfaces de responsivas. Com conhecimento no uso do React, posso criar interfaces escaláveis e de fácil manutenção. Isso me permite criar um código eficiente e sustentável que pode se adequar às necessidades de mudança de um negócio.
           </ParaText>
         </motion.div>
       </FlexContainer>

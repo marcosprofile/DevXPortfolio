@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 // import global styles
 import {
@@ -9,11 +9,11 @@ import {
   BlueText,
   FlexContainer,
   Button,
-} from '../styles/Global.styled';
+} from '../styles/Global.styled'
 
-import { FaWhatsapp, FaRegEnvelope } from "react-icons/fa6";
+import { FaWhatsapp, FaRegEnvelope } from "react-icons/fa6"
 
-import { fadeInBottomVariant } from '../utils/Variants';
+import { fadeInBottomVariant } from '../utils/Variants'
 
 const Contact = () => {
   return (

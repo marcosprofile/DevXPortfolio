@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from 'react'
+import { motion } from 'framer-motion'
 
 import {
   PaddingContainer,
@@ -10,14 +10,14 @@ import {
   IconContainer,
   Chip,
   Image
-} from '../styles/Global.styled';
+} from '../styles/Global.styled'
 
 // importing react-icons
-import { BsGithub, BsBehance, BsLinkedin, BsEnvelope, BsAward } from 'react-icons/bs';
+import { BsGithub, BsBehance, BsLinkedin, BsEnvelope, BsAward } from 'react-icons/bs'
 
-import CheckBlue from '../assets/check-blue.svg';
+import CheckBlue from '../assets/check-blue.svg'
 
-import { fadeInLeftVariant } from '../utils/Variants';
+import { fadeInLeftVariant } from '../utils/Variants'
 
 const Showcase = () => {
   return (
@@ -27,6 +27,7 @@ const Showcase = () => {
       bottom="10%"
       $responsiveLeft="1rem"
       $responsiveRight="1rem"
+      $responsiveTop="8rem"
     >
       <FlexContainer align="center" $fullWidthChild="true">
         {/* --left-content-- */}
@@ -44,10 +45,10 @@ const Showcase = () => {
             Olá! Eu sou <BlueText>Marcos Laurindo Ferreira</BlueText>
           </Heading>
           <Heading as="h1" size="h1">
-            <BlueText>UI/UX Developer</BlueText>
+            <BlueText>UX/UI Developer</BlueText>
           </Heading>
           <ParaText as="p" top="2rem" bottom="4rem" mWidth="600px">
-            Sou um UX/UI Designer e Desenvolvedor Front-end apaixonado por tecnologia. Com experiência em Figma e habilidades em desenvolvimento Front-end, procuro sempre unir design intuitivo e código eficiente.
+            Apaixonado por criar experiências digitais intuitivas e funcionais. Especialista no Figma e Front-end, combino design e código para entregar interfaces responsivas e de alta fidelidade.
           </ParaText>
 
           <PaddingContainer bottom="3.5rem">

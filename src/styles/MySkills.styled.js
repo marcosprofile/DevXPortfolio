@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const SkillsCardContainer = styled.div`
   display: grid;
@@ -24,4 +24,10 @@ export const SkillsCard = styled.div`
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin-top: 2rem;
   };
+`;
+
+export const IconContainer = styled.div`
+  font-size: ${({ size }) => size};
+  cursor: default;
+  color: ${({ theme }) => theme.colors.secondary};
 `;
