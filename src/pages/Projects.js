@@ -34,7 +34,7 @@ const Projects = () => {
           initial={{ opacity: 0, scale: 1 }}
           animate={showButton ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 1 }}
           transition={{ duration: 0.3, ease: 'easeOut' }}
-          style={{ position: 'fixed', bottom: '2rem', right: '2rem', zIndex: 9999 }}
+          style={{ position: 'fixed', bottom: '2rem', right: '2rem' }}
         >
           <RoundedButton url="#Projects" />
         </motion.div>
