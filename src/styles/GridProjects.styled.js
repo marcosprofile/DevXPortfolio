@@ -1,15 +1,18 @@
 import styled from 'styled-components'
 
-export const GridContainer = styled.div`
+export const GridContainer = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
+  list-style: none;
 
   @media (max-width: 1200px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 `
+
+export const ListItem = styled.li``
 
 export const Image = styled.img`
   width: 100%;

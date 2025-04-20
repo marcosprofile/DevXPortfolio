@@ -1,6 +1,7 @@
-import { motion } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
+import { useRef } from 'react'
 
-import { GridContainer, Image } from '../styles/GridProjects.styled'
+import { GridContainer, ListItem, Image } from '../styles/GridProjects.styled'
 
 // import global styles
 import {
@@ -11,11 +12,14 @@ import {
   Button,
 } from '../styles/Global.styled'
 
-import { fadeInTopVariant, fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants'
+import { fadeInTopVariant, fadeInRightVariant, container, item } from '../utils/Variants'
 
 import { GridSixProjects } from '../utils/Data'
 
 const GridProjects = () => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { triggerOnce: false })
+
   return (
     <PaddingContainer
       id="Projects"
@@ -49,13 +53,22 @@ const GridProjects = () => {
       <PaddingContainer
         top="3rem"
         as={motion.div}
-        variants={fadeInLeftVariant}
+        variants={fadeInTopVariant}
         initial="hidden"
         whileInView="visible"
+        id="projects"
+        ref={ref}
       >
-        <GridContainer>
+        <GridContainer
+          as={motion.ul}
+          variants={container}
+          initial="hidden"
+          animate={isInView ? 'visible' : 'hidden'}
+        >
           {GridSixProjects.map((project) => (
-            <Image key={project.id} src={project.image} title={project.name} />
+            <ListItem key={project.id} as={motion.li} variants={item}>
+              <Image src={project.image} title={project.name} />
+            </ListItem>
           ))}
         </GridContainer>
       </PaddingContainer>
