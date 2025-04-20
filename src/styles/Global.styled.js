@@ -196,20 +196,31 @@ export const Image = styled.img`
   object-fit: cover;
 `
 
+export const FixedContainer = styled.div`
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  right: 2.5rem;
+  bottom: 2.5rem;
+  
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width: 100%;
+    left: 0;
+    justify-content: center;
+  }
+`
+
 export const BackToTop = styled.a`
   display: flex;
   align-items: center;
   gap: .5rem;
-  text-decoration: none;
-  position: fixed;
-  background-color: #131C31;
-  bottom: 2.5rem;
-  right: 2.5rem;
-  border-radius: 5rem;
   padding: .5rem .75rem .5rem .5rem;
-  color: #DDD;
+  border-radius: 5rem;
+  background-color: #131C31;
+  text-decoration: none;
   font-size: .875rem;
   font-weight: 600;
+  color: #DDD;
   box-shadow: 0 0 4px 1px #7EADFC60;
   transition: all .3s ease-in-out;
 

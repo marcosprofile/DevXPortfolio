@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Container, FadeImage, MainBody } from '../styles/Global.styled'
+import { Container, FadeImage, FixedContainer, MainBody } from '../styles/Global.styled'
 import MyProjects from '../components/MyProjects'
 
 import TopFadeImage from '../assets/top.png'
@@ -29,15 +29,14 @@ const Projects = () => {
       <Container>
         <MouseFollower />
         <MyProjects />
-        {/* {showButton && <RoundedButton url='#Projects' />} */}
-        <motion.div
+        <FixedContainer
+          as={motion.div}
           initial={{ opacity: 0, scale: 1 }}
           animate={showButton ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 1 }}
           transition={{ duration: 0.3, ease: 'easeOut' }}
-          style={{ position: 'fixed', bottom: '2rem', right: '2rem' }}
         >
           <RoundedButton url="#Projects" />
-        </motion.div>
+        </FixedContainer>
         <Footer />
       </Container>
 
