@@ -22,7 +22,7 @@ import { fadeInLeftVariant } from '../utils/Variants'
 const Showcase = () => {
   return (
     <PaddingContainer
-      id="Home"
+      id="inicio"
       top="12%"
       bottom="10%"
       $responsiveLeft="1rem"

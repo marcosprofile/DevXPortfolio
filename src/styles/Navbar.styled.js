@@ -36,12 +36,19 @@ export const NavLinkContainer = styled.div`
 `;
 
 export const NavLinkBtn = styled.a`
+  display: flex;
+  align-items: center;
+  gap: .5rem;
   color: ${({ theme }) => theme.colors.white};
   text-decoration: none;
   padding: .5rem 1.25rem;
   border-radius: 8rem;
   border: 1px solid transparent;
   transition: all .2s ease;
+
+  svg {
+    font-size: 1.25rem;
+  }
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.primary_light };

@@ -40,23 +40,23 @@ export const Skills = [
 export const navLinks = [
   {
     id: 0,
-    name: 'Home',
-    href: '#Home'
+    name: 'Início',
+    href: '#inicio'
   },
   {
     id: 1,
     name: 'Skills',
-    href: '#Skills'
+    href: '#skills'
   },
   {
     id: 2,
     name: 'Projetos',
-    href: '#Projects'
+    href: '#projetos'
   },
   {
     id: 3,
     name: 'Contato',
-    href: '#Contact'
+    href: '#contato'
   },
 ]
 

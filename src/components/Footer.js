@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
       <PaddingContainer top="2.5rem" bottom="2.5rem">
         <Heading as="p" size="p" align="center">
-          &copy 2025 | Marcos L. Ferreira • UX/UI Developer - Todos os direitos reservados.
+          &copy; 2025 | Marcos L. Ferreira • UX/UI Developer - Todos os direitos reservados.
         </Heading>
       </PaddingContainer>
     </footer>

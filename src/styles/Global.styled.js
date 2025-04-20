@@ -1,5 +1,16 @@
 import styled from 'styled-components'
 
+export const ProgressBar = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background-color: ${({ theme }) => theme.colors.secondary};
+  transform-origin: 0%;
+  z-index: 10;
+`;
+
 export const MainBody = styled.div`
   background-color: ${({ theme }) => theme.colors.primary};
 `;
@@ -183,4 +194,28 @@ export const Image = styled.img`
   width: ${({ width }) => width};
   height: ${({ height }) => height};
   object-fit: cover;
+`
+
+export const BackToTop = styled.a`
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  text-decoration: none;
+  position: fixed;
+  background-color: #131C31;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  border-radius: 5rem;
+  padding: .5rem .75rem .5rem .5rem;
+  color: #DDD;
+  font-size: .875rem;
+  font-weight: 600;
+  box-shadow: 0 0 4px 1px #7EADFC60;
+  transition: all .3s ease-in-out;
+
+  svg { font-size: 1.25rem }
+
+  &:hover {
+    transform: translateY(-8px);
+  }
 `

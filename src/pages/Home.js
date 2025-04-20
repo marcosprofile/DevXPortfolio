@@ -14,8 +14,8 @@ import GridProjects from '../components/GridProjects'
 const Home = () => {
   return (
     <MainBody>
+      <ScrollProgressBar />
       <Container>
-        <ScrollProgressBar />
         <MouseFollower />
         <Showcase />
         <MySkills />

@@ -18,6 +18,8 @@ import {
 import { theme } from '../utils/Theme'
 import { navLinks } from '../utils/Data'
 
+import { BsArrowLeftShort } from "react-icons/bs";
+
 
 const Navbar = () => {
   const location = useLocation()
@@ -46,7 +48,10 @@ const Navbar = () => {
           <FlexContainer justify="center" $responsiveFlex="true">
             <NavLinkContainer>
               {isProjectsPage ? (
-                <NavLinkBtn href="/">Voltar</NavLinkBtn>
+                <NavLinkBtn href="/">
+                  <BsArrowLeftShort />
+                  Voltar à tela de início
+                </NavLinkBtn>
               ) : (
                 navLinks.map((navigate, id) => (
                   <NavLinkBtn key={id} href={navigate.href}>{navigate.name}</NavLinkBtn>

@@ -22,7 +22,7 @@ const GridProjects = () => {
 
   return (
     <PaddingContainer
-      id="Projects"
+      id="projetos"
       top="10%"
       bottom="5%"
       $responsiveTop="20%"

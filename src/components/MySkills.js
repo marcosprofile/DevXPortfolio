@@ -24,7 +24,7 @@ import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants'
 const MySkills = () => {
   return (
     <PaddingContainer
-      id="Skills"
+      id="skills"
       top="10%"
       bottom="10%"
       $responsiveLeft="1rem"

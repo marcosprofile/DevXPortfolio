@@ -17,7 +17,7 @@ import { fadeInBottomVariant } from '../utils/Variants'
 
 const Contact = () => {
   return (
-    <PaddingContainer id="Contact" top="5%" bottom="10%">
+    <PaddingContainer id="contato" top="5%" bottom="10%">
       <Heading
         as={motion.h4}
         variants={fadeInBottomVariant}
