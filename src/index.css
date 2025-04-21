@@ -36,3 +36,12 @@ body {
     cursor: not-allowed;
   }
 }
+
+@media (max-width: 1025px) {
+  footer {
+    p {
+      font-size: .875rem;
+      line-height: 156%;
+    }
+  }
+}

@@ -2,11 +2,11 @@ import styled from 'styled-components'
 
 export const SkillsCardContainer = styled.div`
   display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    display: block;
+    gap: 1rem;
     padding: 0;
   };
 `;
@@ -22,12 +22,16 @@ export const SkillsCard = styled.div`
   border-radius: 1rem;
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    margin-top: 2rem;
-  };
+    border-radius: .5rem;
+  }
 `;
 
 export const IconContainer = styled.div`
   font-size: ${({ size }) => size};
   cursor: default;
   color: ${({ theme }) => theme.colors.secondary};
+
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    font-size: 2.5rem;
+  }
 `;
