@@ -13,6 +13,8 @@ import VirtualBookcase from '../assets/projetos/virtual_bookcase.jpg'
 import JornadaMilhas from '../assets/projetos/jornada_milhas.png'
 import MyTodoList from '../assets/projetos/my_todo_list.png'
 import PrimeFlix from '../assets/projetos/prime_flix.png'
+import ProjetoUnes from '../assets/projetos/projeto_unes.png'
+import CloneNetflix from '../assets/projetos/clone_netflix.png'
 
 export const Skills = [
   {
@@ -68,29 +70,29 @@ export const GridSixProjects = [
   },
   {
     id: 1,
-    name: 'Atomicwork',
-    image: AtomicWork
+    name: 'Projeto Unes',
+    image: ProjetoUnes
   },
   {
     id: 2,
+    name: 'Prime Flix',
+    image: PrimeFlix
+  },
+  {
+    id: 3,
     name: 'Design Agency',
     image: DesignAgency
   },
   {
-    id: 3,
+    id: 4,
     name: 'Virtual Bookcase',
     image: VirtualBookcase
   },
   {
-    id: 4,
+    id: 5,
     name: 'Jornada Milhas',
     image: JornadaMilhas
-  },
-  {
-    id: 5,
-    name: 'ToDo Lista',
-    image: MyTodoList
-  },
+  }
 ]
 
 export const projectDetails = [
@@ -118,6 +120,17 @@ export const projectDetails = [
   },
   {
     id: 2,
+    project_name: 'Projeto Unes',
+    project_desc: 'Projeto desenvolvido para fins de estudo, aplicando conceitos de Flexbox',
+    tech_stack: ['HTML', 'CSS'],
+    project_img: ProjetoUnes,
+    github: 'https://github.com/marcosprofile',
+    project_code: 'https://github.com/marcosprofile/projeto_unes',
+    project_url: 'https://projetounes.vercel.app/',
+    reverse: true,
+  },
+  {
+    id: 3,
     project_name: 'Design Agency',
     project_desc: 'Projeto encontrado na comunidade do figma, desenvolvido com o intuito de aperfeiçoar meus conhecimentos na construção de layouts com HTML, CSS e JavaScript.',
     tech_stack: ['HTML', 'CSS', 'JavaScript'],
@@ -125,20 +138,20 @@ export const projectDetails = [
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/AgencyWeb',
     project_url: 'https://agency-web-cyan.vercel.app/',
-    reverse: true,
+    reverse: false,
   },
   {
-    id: 3,
+    id: 4,
     project_name: 'CRUD Angular',
     project_desc: 'Este projeto foi desenvolvido com angular 17 com o intuito de aprimorar meus conhecimentos no framework.',
     tech_stack: ['Angular', 'TypeScript', 'CSS'],
     project_img: CrudAngular,
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/CRUD-Angular',
-    reverse: false,
+    reverse: true,
   },
   {
-    id: 4,
+    id: 5,
     project_name: 'Virtual Bookcase',
     project_desc: 'Projeto criado apenas para organizar e consultar meus livros.',
     tech_stack: ['React', 'JavaScript', 'styled-components'],
@@ -146,10 +159,10 @@ export const projectDetails = [
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/virtual-bookcase',
     project_url: 'https://virtual-bookcase.vercel.app/',
-    reverse: true,
+    reverse: false,
   },
   {
-    id: 5,
+    id: 6,
     project_name: 'Jornada Milhas',
     project_desc: 'Este projeto foi realizado em busca de ampliar minhas habilidades no Angular, criando componentes reutilizáveis e organizando a aplicação. Aprendi a utilizar o Angular Material, explorando a ampla variedade de componentes disponíveis para criar uma interface moderna e atraente.',
     tech_stack: ['Angular', 'SASS', 'TypeScript'],
@@ -157,10 +170,10 @@ export const projectDetails = [
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/jornada-milhas',
     project_url: 'https://jornada-milhas-three.vercel.app/',
-    reverse: false,
+    reverse: true,
   },
   {
-    id: 6,
+    id: 7,
     project_name: 'ToDo List',
     project_desc: 'Este projeto foi realizado em busca de ampliar minhas habilidades no Angular, criando uma aplicação para listar, editar e remover tarefas.',
     tech_stack: ['Angular', 'SASS', 'TypeScript'],
@@ -168,10 +181,10 @@ export const projectDetails = [
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/todo-list-angular',
     project_url: 'https://todo-list-angular-ecru.vercel.app/',
-    reverse: true,
+    reverse: false,
   },
   {
-    id: 7,
+    id: 8,
     project_name: 'Prime Flix',
     project_desc: 'Este projeto foi realizado com React, realizando a consulta de uma API externa para a construção da aplicação.',
     tech_stack: ['React JS', 'CSS', 'TypeScript'],
@@ -179,6 +192,17 @@ export const projectDetails = [
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/prime-flix',
     project_url: 'https://prime-flix-one.vercel.app/',
-    reverse: false,
+    reverse: true,
+  },
+  {
+    id: 9,
+    project_name: 'Netflix Site (clone)',
+    project_desc: 'Projeto criado com base no site antigo da netflix, apenas para praticar estilizações de layout.',
+    tech_stack: ['HTML', 'CSS'],
+    project_img: CloneNetflix,
+    github: 'https://github.com/marcosprofile',
+    project_code: 'https://github.com/marcosprofile/Clone-Netflix',
+    project_url: 'https://netflixclone-site.vercel.app/',
+    reverse: true,
   }
 ]
