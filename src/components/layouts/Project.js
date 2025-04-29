@@ -75,7 +75,7 @@ const Project = ({ data }) => {
             if (isDisabledPreview) e.preventDefault()
           }}
         >
-          <FaLaptopCode />
+          <FaLaptop />
           Visualizar Website
         </Button>
 
@@ -89,7 +89,7 @@ const Project = ({ data }) => {
             if (isDisabledCode) e.preventDefault()
           }}
         >
-          <FaLaptop />
+          <FaLaptopCode />
           Visualizar Código
         </Button>
 
