@@ -1,8 +1,9 @@
 import React from 'react'
 
 import { motion } from 'framer-motion'
+import { carousel, fadeInRightVariant, fadeInTopVariant } from '../utils/Variants'
+import { Skills } from '../utils/Data'
 
-// import global styles
 import {
   FlexContainer,
   PaddingContainer,
@@ -11,71 +12,102 @@ import {
   BlueText,
 } from '../styles/Global.styled'
 
-// import My Skills styles
 import {
-  SkillsCardContainer,
-  SkillsCard,
-  IconContainer
+  SkillsCarouselContainer,
+  SkillCard,
+  Icon,
+  SkillsContainer
 } from '../styles/MySkills.styled'
 
-import { Skills } from '../utils/Data'
-import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants'
+import {
+  TbDeviceDesktopAnalytics,
+  TbDeviceDesktopCode
+} from "react-icons/tb"
+import { useIsMobile } from '../hooks/useIsMobile'
+
 
 const MySkills = () => {
+  const isMobile = useIsMobile()
+  const duplicatedSkills = [...Skills, ...Skills, ...Skills, ...Skills]
+
+  const adjustedVariant = {
+    ...carousel,
+    visible: {
+      ...carousel.visible,
+      transition: {
+        ...carousel.visible.transition,
+        duration: isMobile ? 15 : 40
+      }
+    }
+  }
+
   return (
     <PaddingContainer
       id="skills"
-      top="10%"
-      bottom="10%"
+      $top="10%"
+      $bottom="5%"
       $responsiveLeft="1rem"
       $responsiveRight="1rem"
     >
       <FlexContainer
-        as={motion.div}
-        variants={fadeInLeftVariant}
-        initial="hidden"
-        whileInView="visible"
-
         $responsiveFlex="true"
         $responsiveGap="3rem"
-        $responsiveDirection="column-reverse"
+        $direction="column"
         $fullWidthChild="true"
-        gap="5.5rem">
-        {/* --left-section-- */}
-        <SkillsCardContainer>
-          {Skills.map((skill, id) => (
-            <SkillsCard key={id}>
-              <IconContainer size="5rem">
-                {skill.icon}
-              </IconContainer>
-              <Heading as="h4" size="h4">
-                {skill.tech}
-              </Heading>
-            </SkillsCard>
-          ))}
-        </SkillsCardContainer>
+        $gap="5.5rem">
 
-        {/* --right-section-- */}
-        <motion.div
-          variants={fadeInRightVariant}
+        <FlexContainer
+          as={motion.div}
+          variants={fadeInTopVariant}
           initial="hidden"
           whileInView="visible"
+          $direction="column"
         >
           <Heading as="h4" size="h4">
             MINHAS SKILLS
           </Heading>
-
-          <Heading as="h2" size="h2" top=".5rem">
+          <Heading as="h2" size="h2" $top=".5rem">
             O que <BlueText>eu posso fazer</BlueText>
           </Heading>
+        </FlexContainer>
 
-          <ParaText top="2rem" bottom="1.5rem">
-            Como UX/UI Designer tenho experiência na projeção de interfaces intuitivas e funcionais com base em pesquisas de mercado, buscando os melhores conceitos de UX e UI para a concepção do produto final. Tenho experiência na construção de protótipos navegáveis, desde wireframe até a construção da UI em alta fidelidade.
-          </ParaText>
-          <ParaText>
-            Como desenvolvedor tenho experiência em desenvolvimento front-end, com conhecimento em JavaScrip, React, Angular, HTML, CSS e SASS. Tenho experiência na construção de interfaces de responsivas. Com conhecimento no uso do React, posso criar interfaces escaláveis e de fácil manutenção. Isso me permite criar um código eficiente e sustentável que pode se adequar às necessidades de mudança de um negócio.
-          </ParaText>
-        </motion.div>
+        <FlexContainer
+          as={motion.div}
+          variants={fadeInRightVariant}
+          initial="hidden"
+          whileInView="visible"
+          $gap="2rem"
+        >
+          <SkillCard>
+            <TbDeviceDesktopAnalytics />        
+            <Heading as="h3" size="h3">UI/UX Designer</Heading>
+            <ParaText $top=".75rem">
+              Como UX/UI Designer tenho experiência na projeção de interfaces intuitivas e funcionais com base em pesquisas de mercado, buscando os melhores conceitos de UX e UI para a concepção do produto final. Tenho experiência na construção de protótipos navegáveis, desde wireframe até a construção da UI em alta fidelidade.
+            </ParaText>
+          </SkillCard>
+          <SkillCard $marginTop>
+            <TbDeviceDesktopCode />
+            <Heading as="h3" size="h3">Front-end</Heading>
+            <ParaText $top=".75rem">
+              Como desenvolvedor tenho experiência em desenvolvimento front-end, com conhecimento em JavaScrip, React, Angular, HTML, CSS e SASS. Tenho experiência na construção de interfaces de responsivas. Com conhecimento no uso do React, posso criar interfaces escaláveis e de fácil manutenção. Isso me permite criar um código eficiente e sustentável que pode se adequar às necessidades de mudança de um negócio.
+            </ParaText>
+          </SkillCard>
+        </FlexContainer>
+
+        <SkillsContainer>
+          <SkillsCarouselContainer
+            as={motion.div}
+            variants={adjustedVariant}
+            initial="hidden"
+            whileInView="visible"
+          >
+            {duplicatedSkills.map((skill, id) => (
+              <Icon key={id}>
+                {skill.icon}
+              </Icon>
+            ))}
+          </SkillsCarouselContainer>
+        </SkillsContainer>
       </FlexContainer>
     </PaddingContainer>
   )

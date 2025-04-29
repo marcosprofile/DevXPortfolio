@@ -33,7 +33,7 @@ const Project = ({ data }) => {
 
   return (
     <FlexContainer
-      gap="6rem"
+      $gap="6rem"
       $direction={data.reverse ? 'row-reverse' : false}
       $fullWidthChild="true"
     >
@@ -43,8 +43,8 @@ const Project = ({ data }) => {
         initial="hidden"
         whileInView="visible"
       >
-        <FlexContainer align="center" gap="1rem">
-          <Heading as="h3" size="h3" bottom="1rem">
+        <FlexContainer $align="center" $gap="1rem">
+          <Heading as="h3" size="h3" $bottom="1rem">
             {data.project_name}
           </Heading>
 
@@ -53,15 +53,15 @@ const Project = ({ data }) => {
           </IconContainer>
         </FlexContainer>
 
-        <PaddingContainer top="1rem">
-          <FlexContainer gap="1rem" $alignCenter>
+        <PaddingContainer $top="1rem">
+          <FlexContainer $gap="1rem" $alignCenter>
             {data.tech_stack.map((stack, id) => (
               <TechStackCard key={id}>{stack}</TechStackCard>
             ))}
           </FlexContainer>
         </PaddingContainer>
 
-        <ParaText top="1.5rem" bottom="2rem">
+        <ParaText $top="1.5rem" $bottom="2rem">
           {data.project_desc}
         </ParaText>
 
@@ -97,7 +97,7 @@ const Project = ({ data }) => {
 
       {/* --right-section-project-- */}
       <ProjectImageContainer
-        justify={data.reverse ? "flex-start" : "flex-end"}
+        $justify={data.reverse ? "flex-start" : "flex-end"}
         as={motion.div}
         variants={data.reverse ? fadeInLeftVariant : fadeInRightVariant}
         initial="hidden"

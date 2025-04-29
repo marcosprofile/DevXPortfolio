@@ -131,3 +131,18 @@ export const item = {
     opacity: 1
   }
 };
+
+export const carousel = {
+  hidden: {
+    x: '0%'
+  },
+  visible: {
+    x: ["0%", "-100%"],
+    transition: {
+      repeat: Infinity,
+      repeatType: "loop",
+      duration: 40,
+      ease: "linear",
+    }
+  }
+}

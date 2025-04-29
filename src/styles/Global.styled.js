@@ -22,8 +22,8 @@ export const Container = styled.div`
 `;
 
 export const PaddingContainer = styled.div`
-  padding-top: ${({ top }) => top};
-  padding-bottom: ${({ bottom }) => bottom};
+  padding-top: ${( props ) => props.$top};
+  padding-bottom: ${( props ) => props.$bottom};
   padding-left: ${({ left }) => left};
   padding-right: ${({ right }) => right};
 
@@ -37,11 +37,11 @@ export const PaddingContainer = styled.div`
 
 export const FlexContainer = styled.div`
   display: flex;
-  flex-direction: ${({ $direction }) => $direction};
-  justify-content: ${({ justify }) => justify};
-  align-items: ${({ align }) => align};
-  gap: ${({ gap }) => gap};
-  flex-wrap: ${({ flexWrap }) => flexWrap};
+  flex-direction: ${({ $direction }) => $direction };
+  justify-content: ${( props ) => props.$justify };
+  align-items: ${( props ) => props.$align };
+  gap: ${( props ) => props.$gap };
+  flex-wrap: ${( props ) => props.$flexWrap };
 
   & > div {
     flex: ${({ $fullWidthChild }) => $fullWidthChild && 1};
@@ -57,7 +57,7 @@ export const FlexContainer = styled.div`
 
 export const Heading = styled(PaddingContainer)`
   color: ${({ theme }) => theme.colors.white};
-  text-align: ${({ align }) => align};
+  text-align: ${( props ) => props.$align};
   font-size: ${({ size }) => {
     switch (size) {
       case 'h1':
@@ -106,6 +106,12 @@ export const BlueText = styled.span`
 export const ParaText = styled(PaddingContainer)`
   color: ${({ theme }) => theme.colors.para_text_color};
   max-width: ${({ mWidth }) => mWidth };
+  line-height: 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile }) {
+    font-size: .875rem;
+    line-height: 24px;
+  }
 `;
 
 export const IconContainer = styled.a`
@@ -160,7 +166,7 @@ export const Submit = styled(Button).attrs({ as: 'button' })`
 export const FadeImage = styled.img`
   height: 468px;
   position: absolute;
-  top: ${({ top }) => top};
+  top: ${( props ) => props.$top};
   right: ${({ right }) => right};
   left: ${({ left }) => left};
   bottom: ${({ bottom }) => bottom};

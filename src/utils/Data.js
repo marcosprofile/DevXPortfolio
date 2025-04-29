@@ -2,8 +2,16 @@ import {
   FaSass,
   FaReact,
   FaGitSquare,
-  FaJsSquare
+  FaJsSquare,
+  FaCss3,
+  FaAngular,
+  FaFigma,
+  FaHtml5
 } from 'react-icons/fa'
+
+import { SiFramer } from "react-icons/si";
+
+import { BiLogoTypescript } from "react-icons/bi";
 
 import Gemini from '../assets/projetos/gemini.png'
 import AtomicWork from '../assets/projetos/atomicwork.png'
@@ -18,24 +26,54 @@ import CloneNetflix from '../assets/projetos/clone_netflix.png'
 
 export const Skills = [
   {
-    id: 0,
+    id: 1,
+    tech: 'HTML',
+    icon: <FaHtml5 />
+  },
+  {
+    id: 2,
+    tech: 'CSS',
+    icon: <FaCss3 />
+  },
+  {
+    id: 3,
     tech: 'SASS',
     icon: <FaSass />
   },
   {
-    id: 1,
+    id: 4,
+    tech: 'JavaScript',
+    icon: <FaJsSquare />
+  },
+  {
+    id: 5,
+    tech: 'TypeScript',
+    icon: <BiLogoTypescript />
+  },
+  {
+    id: 6,
+    tech: 'React',
+    icon: <FaReact />
+  },
+  {
+    id: 7,
+    tech: 'Angular',
+    icon: <FaAngular />
+  },
+  {
+    id: 8,
     tech: 'Git',
     icon: <FaGitSquare />
   },
   {
-    id: 2,
-    tech: 'React JS',
-    icon: <FaReact />
+    id: 9,
+    tech: 'Figma',
+    icon: <FaFigma />
   },
   {
-    id: 3,
-    tech: 'JavaScript',
-    icon: <FaJsSquare />
+    id: 10,
+    tech: 'Framer',
+    icon: <SiFramer />
   },
 ]
 

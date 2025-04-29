@@ -23,13 +23,13 @@ const Showcase = () => {
   return (
     <PaddingContainer
       id="inicio"
-      top="12%"
-      bottom="10%"
+      $top="12%"
+      $bottom="10%"
       $responsiveLeft="1rem"
       $responsiveRight="1rem"
       $responsiveTop="8rem"
     >
-      <FlexContainer align="center" $fullWidthChild="true">
+      <FlexContainer $align="center" $fullWidthChild="true">
         {/* --left-content-- */}
         <motion.div
           variants={fadeInLeftVariant}
@@ -39,20 +39,20 @@ const Showcase = () => {
           <Heading
             as="h3"
             size="h3"
-            top=".5rem"
-            bottom="1rem"
+            $top=".5rem"
+            $bottom="1rem"
           >
             Olá! Eu sou <BlueText>Marcos Laurindo Ferreira</BlueText>
           </Heading>
           <Heading as="h1" size="h1">
             <BlueText>UX/UI Developer</BlueText>
           </Heading>
-          <ParaText as="p" top="2rem" bottom="4rem" mWidth="600px">
+          <ParaText as="p" $top="2rem" $bottom="4rem" $mWidth="600px">
             Apaixonado por criar experiências digitais intuitivas e funcionais. Especialista no Figma e Front-end, combino design e código para entregar interfaces responsivas e de alta fidelidade.
           </ParaText>
 
-          <PaddingContainer bottom="3.5rem">
-            <FlexContainer justify="center" gap="1rem" flexWrap="wrap" $responsiveFlex>
+          <PaddingContainer $bottom="3.5rem">
+            <FlexContainer $justify="center" $gap="1rem" $flexWrap="wrap" $responsiveFlex>
               <Chip>
                 <Image src={CheckBlue} alt="Check icon" />
                 Design System
@@ -77,7 +77,7 @@ const Showcase = () => {
           </PaddingContainer>
 
           {/* --social-icons-- */}
-          <FlexContainer justify="center" gap="1.25rem" $responsiveFlex="true">
+          <FlexContainer $justify="center" $gap="1.25rem" $responsiveFlex="true">
             <IconContainer color="white" size="2rem" href="https://github.com/marcosprofile" target="_blank">
               <BsGithub />
             </IconContainer>

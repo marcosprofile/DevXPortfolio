@@ -17,14 +17,14 @@ import { fadeInBottomVariant } from '../utils/Variants'
 
 const Contact = () => {
   return (
-    <PaddingContainer id="contato" top="5%" bottom="10%">
+    <PaddingContainer id="contato" $top="5%" $bottom="10%">
       <Heading
         as={motion.h4}
         variants={fadeInBottomVariant}
         initial="hidden"
         whileInView="visible"
         size="h4"
-        align="center"
+        $align="center"
       >
         MEU CONTATO
       </Heading>
@@ -35,19 +35,19 @@ const Contact = () => {
         initial="hidden"
         whileInView="visible"
         size="h2"
-        align="center"
-        top=".5rem"
+        $align="center"
+        $top=".5rem"
       >
         Entre em <BlueText>contato comigo aqui</BlueText>
       </Heading>
 
-      <PaddingContainer top="3rem">
+      <PaddingContainer $top="3rem">
         <FlexContainer
           as={motion.div}
           variants={fadeInBottomVariant}
           initial="hidden"
           whileInView="visible"
-          justify="center"
+          $justify="center"
         >
           <Button href="https://wa.me/5511954375410?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho..." target="_blank" $mr="1rem">
             <FaWhatsapp />

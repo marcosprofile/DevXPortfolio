@@ -39,13 +39,13 @@ const Navbar = () => {
   return (
     <NavbarContainer $bgColor={sticky ? theme.colors.primary : 'transparent'} >
       <PaddingContainer
-        top="1.2rem"
-        bottom="1.2rem"
+        $top="1.2rem"
+        $bottom="1.2rem"
         $responsiveLeft="1rem"
         $responsiveRight="1rem"
       >
         <Container>
-          <FlexContainer justify="center" $responsiveFlex="true">
+          <FlexContainer $justify="center" $responsiveFlex="true">
             <NavLinkContainer>
               {isProjectsPage ? (
                 <NavLinkBtn href="/">

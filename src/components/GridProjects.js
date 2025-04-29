@@ -23,8 +23,8 @@ const GridProjects = () => {
   return (
     <PaddingContainer
       id="projetos"
-      top="10%"
-      bottom="5%"
+      $top="10%"
+      $bottom="5%"
       $responsiveTop="20%"
       $responsiveLeft="1rem"
       $responsiveRight="1rem"
@@ -40,7 +40,7 @@ const GridProjects = () => {
       </Heading>
 
       <Heading
-        top=".5rem"
+        $top=".5rem"
         as={motion.h2}
         variants={fadeInTopVariant}
         initial="hidden"
@@ -51,7 +51,7 @@ const GridProjects = () => {
       </Heading>
 
       <PaddingContainer
-        top="3rem"
+        $top="3rem"
         as={motion.div}
         variants={fadeInTopVariant}
         initial="hidden"
@@ -73,13 +73,13 @@ const GridProjects = () => {
         </GridContainer>
       </PaddingContainer>
 
-      <PaddingContainer top="3rem">
+      <PaddingContainer $top="3rem">
         <FlexContainer
           as={motion.div}
           variants={fadeInRightVariant}
           initial="hidden"
           whileInView="visible"
-          justify="center"
+          $justify="center"
         >
           <Button href="/projects" $mr="1rem">
             Ver todos os projetos

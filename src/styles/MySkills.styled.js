@@ -1,37 +1,45 @@
 import styled from 'styled-components'
 
-export const SkillsCardContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+export const SkillsContainer = styled.div`
+  max-width: 1280px;
+  overflow: hidden;
+`
 
-  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    gap: 1rem;
-    padding: 0;
-  };
+export const SkillsCarouselContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  font-size: 4rem;
+  color: #FFFFFF75;
+  padding-top: 5rem;
+  gap: 4rem;
 `;
 
-export const SkillsCard = styled.div`
+export const SkillCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.primary_light};
-  width: 100%;
-  border: 1px solid ${({ theme }) => theme.colors.white};
-  padding: 3rem 0;
+  gap: 1rem;
+  background-color: #151F37;
+  padding: 2rem;
+  border: ${({ border }) => border };
+  color: #FFFFFF;
+  padding-right: ${({ $paddingRight }) => $paddingRight };
   border-radius: 1rem;
 
-  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    border-radius: .5rem;
+  svg { font-size: 3.5rem };
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile }) {
+    margin-top: ${({ $marginTop }) => $marginTop ? '2rem' : ''};
   }
 `;
 
-export const IconContainer = styled.div`
-  font-size: ${({ size }) => size};
+export const Icon = styled.div`
+  font-size: 4rem;
+  height: 4rem;
   cursor: default;
   color: ${({ theme }) => theme.colors.secondary};
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 `;

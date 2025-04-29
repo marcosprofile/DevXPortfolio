@@ -17,8 +17,8 @@ const MyProjects = () => {
   return (
     <PaddingContainer
       id="Projects"
-      top="10%"
-      bottom="5%"
+      $top="10%"
+      $bottom="5%"
       $responsiveTop="20%"
       $responsiveLeft="1rem"
       $responsiveRight="1rem"
@@ -34,7 +34,7 @@ const MyProjects = () => {
       </Heading>
 
       <Heading
-        top=".5rem"
+        $top=".5rem"
         as={motion.h2}
         variants={fadeInTopVariant}
         initial="hidden"
@@ -45,7 +45,7 @@ const MyProjects = () => {
       </Heading>
 
       {projectDetails.map((project) => (
-        <PaddingContainer key={project.id} top="5rem" bottom="5rem">
+        <PaddingContainer key={project.id} $top="5rem" $bottom="5rem">
           <Project data={project} />
         </PaddingContainer>
       ))}
