@@ -81,14 +81,14 @@ const MySkills = () => {
           <SkillCard>
             <TbDeviceDesktopAnalytics />        
             <Heading as="h3" size="h3">UI/UX Designer</Heading>
-            <ParaText $top=".75rem">
+            <ParaText $top=".75rem" $center>
               Como UX/UI Designer tenho experiência na projeção de interfaces intuitivas e funcionais com base em pesquisas de mercado, buscando os melhores conceitos de UX e UI para a concepção do produto final. Tenho experiência na construção de protótipos navegáveis, desde wireframe até a construção da UI em alta fidelidade.
             </ParaText>
           </SkillCard>
           <SkillCard $marginTop>
             <TbDeviceDesktopCode />
             <Heading as="h3" size="h3">Front-end</Heading>
-            <ParaText $top=".75rem">
+            <ParaText $top=".75rem" $center>
               Como desenvolvedor tenho experiência em desenvolvimento front-end, com conhecimento em JavaScrip, React, Angular, HTML, CSS e SASS. Tenho experiência na construção de interfaces de responsivas. Com conhecimento no uso do React, posso criar interfaces escaláveis e de fácil manutenção. Isso me permite criar um código eficiente e sustentável que pode se adequar às necessidades de mudança de um negócio.
             </ParaText>
           </SkillCard>

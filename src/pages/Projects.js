@@ -41,7 +41,7 @@ const Projects = () => {
       </Container>
 
       <FadeImage src={TopFadeImage} $top="0" />
-      <FadeImage src={LeftFadeImage} $top="30vh" $right="0" transform="rotate(180deg)" />
+      <FadeImage src={LeftFadeImage} $top="30vh" $right="0" $transform="rotate(180deg)" />
     </MainBody>
   )
 }

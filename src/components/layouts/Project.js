@@ -76,7 +76,7 @@ const Project = ({ data }) => {
           }}
         >
           <FaLaptop />
-          Visualizar Website
+          Website
         </Button>
 
         <Button
@@ -90,7 +90,7 @@ const Project = ({ data }) => {
           }}
         >
           <FaLaptopCode />
-          Visualizar Código
+          Código
         </Button>
 
       </motion.div>

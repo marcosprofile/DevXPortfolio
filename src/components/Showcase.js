@@ -17,7 +17,7 @@ import { BsGithub, BsBehance, BsLinkedin, BsEnvelope, BsAward } from 'react-icon
 
 import CheckBlue from '../assets/check-blue.svg'
 
-import { fadeInLeftVariant } from '../utils/Variants'
+import { fadeInLeftVariant, fadeInTopVariant } from '../utils/Variants'
 
 const Showcase = () => {
   return (
@@ -29,72 +29,74 @@ const Showcase = () => {
       $responsiveRight="1rem"
       $responsiveTop="8rem"
     >
-      <FlexContainer $align="center" $fullWidthChild="true">
-        {/* --left-content-- */}
-        <motion.div
-          variants={fadeInLeftVariant}
-          initial="hidden"
-          whileInView="visible"
+      <FlexContainer
+        as={motion.div}
+        variants={fadeInTopVariant}
+        initial="hidden"
+        whileInView="visible"
+        $align="center"
+        $justify="center"
+        $direction="column"
+        $fullWidthChild="true"
+      >
+        <Heading
+          as="h3"
+          size="h3"
+          $top=".5rem"
+          $bottom="1rem"
         >
-          <Heading
-            as="h3"
-            size="h3"
-            $top=".5rem"
-            $bottom="1rem"
-          >
-            Olá! Eu sou <BlueText>Marcos Laurindo Ferreira</BlueText>
-          </Heading>
-          <Heading as="h1" size="h1">
-            <BlueText>UX/UI Developer</BlueText>
-          </Heading>
-          <ParaText as="p" $top="2rem" $bottom="4rem" $mWidth="600px">
-            Apaixonado por criar experiências digitais intuitivas e funcionais. Especialista no Figma e Front-end, combino design e código para entregar interfaces responsivas e de alta fidelidade.
-          </ParaText>
+          Olá! Eu sou <BlueText>Marcos Laurindo Ferreira</BlueText>
+        </Heading>
+        <Heading as="h1" size="h1">
+          <BlueText>UX/UI Developer</BlueText>
+        </Heading>
+        <ParaText as="p" $top="2rem" $bottom="4rem" $mWidth="600px" $center>
+          Apaixonado por criar experiências digitais intuitivas e funcionais. Especialista no Figma e Front-end, combino design e código para entregar interfaces responsivas e de alta fidelidade.
+        </ParaText>
 
-          <PaddingContainer $bottom="3.5rem">
-            <FlexContainer $justify="center" $gap="1rem" $flexWrap="wrap" $responsiveFlex>
-              <Chip>
-                <Image src={CheckBlue} alt="Check icon" />
-                Design System
-              </Chip>
-              <Chip>
-                <Image src={CheckBlue} alt="Check icon" />
-                Product
-              </Chip>
-              <Chip>
-                <Image src={CheckBlue} alt="Check icon" />
-                Website
-              </Chip>
-              <Chip>
-                <Image src={CheckBlue} alt="Check icon" />
-                Figma
-              </Chip>
-              <Chip>
-                <Image src={CheckBlue} alt="Check icon" />
-                Framer
-              </Chip>
-            </FlexContainer>
-          </PaddingContainer>
-
-          {/* --social-icons-- */}
-          <FlexContainer $justify="center" $gap="1.25rem" $responsiveFlex="true">
-            <IconContainer color="white" size="2rem" href="https://github.com/marcosprofile" target="_blank">
-              <BsGithub />
-            </IconContainer>
-            <IconContainer color="white" size="2rem" href="https://www.behance.net/marcoslferreira" target="_blank">
-              <BsBehance />
-            </IconContainer>
-            <IconContainer color="white" size="2rem" href="https://www.linkedin.com/in/marcosdesigntech/" target="_blank">
-              <BsLinkedin />
-            </IconContainer>
-            <IconContainer color="white" size="2rem" href="mailto:marcos.laurindo@marcotech.dev.br">
-              <BsEnvelope />
-            </IconContainer>
-            <IconContainer color="white" size="2rem" href="https://cursos.alura.com.br/user/marcos-laurindo1997" target="_blank">
-              <BsAward />
-            </IconContainer>
+        <PaddingContainer $bottom="3.5rem">
+          <FlexContainer $justify="center" $gap="1rem" $flexWrap="wrap" $responsiveFlex>
+            <Chip>
+              <Image src={CheckBlue} alt="Check icon" />
+              Design System
+            </Chip>
+            <Chip>
+              <Image src={CheckBlue} alt="Check icon" />
+              Product
+            </Chip>
+            <Chip>
+              <Image src={CheckBlue} alt="Check icon" />
+              Website
+            </Chip>
+            <Chip>
+              <Image src={CheckBlue} alt="Check icon" />
+              Figma
+            </Chip>
+            <Chip>
+              <Image src={CheckBlue} alt="Check icon" />
+              Framer
+            </Chip>
           </FlexContainer>
-        </motion.div>
+        </PaddingContainer>
+
+        {/* --social-icons-- */}
+        <FlexContainer $justify="center" $gap="1.25rem" $responsiveFlex="true">
+          <IconContainer color="white" size="2rem" href="https://github.com/marcosprofile" target="_blank">
+            <BsGithub />
+          </IconContainer>
+          <IconContainer color="white" size="2rem" href="https://www.behance.net/marcoslferreira" target="_blank">
+            <BsBehance />
+          </IconContainer>
+          <IconContainer color="white" size="2rem" href="https://www.linkedin.com/in/marcosdesigntech/" target="_blank">
+            <BsLinkedin />
+          </IconContainer>
+          <IconContainer color="white" size="2rem" href="mailto:marcos.laurindo@marcotech.dev.br">
+            <BsEnvelope />
+          </IconContainer>
+          <IconContainer color="white" size="2rem" href="https://cursos.alura.com.br/user/marcos-laurindo1997" target="_blank">
+            <BsAward />
+          </IconContainer>
+        </FlexContainer>
       </FlexContainer>
     </PaddingContainer>
   )

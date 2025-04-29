@@ -105,8 +105,9 @@ export const BlueText = styled.span`
 
 export const ParaText = styled(PaddingContainer)`
   color: ${({ theme }) => theme.colors.para_text_color};
-  max-width: ${({ mWidth }) => mWidth };
+  max-width: ${( props ) => props.$mWidth };
   line-height: 24px;
+  text-align: ${({ $center }) => $center ? "center" : ""};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile }) {
     font-size: .875rem;
@@ -167,10 +168,10 @@ export const FadeImage = styled.img`
   height: 468px;
   position: absolute;
   top: ${( props ) => props.$top};
-  right: ${({ right }) => right};
-  left: ${({ left }) => left};
-  bottom: ${({ bottom }) => bottom};
-  transform: ${({ transform }) => transform};
+  right: ${( props ) => props.$right};
+  left: ${( props ) => props.$left};
+  bottom: ${( props ) => props.$bottom};
+  transform: ${( props ) => props.$transform};
   z-index: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
