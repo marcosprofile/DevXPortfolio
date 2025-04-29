@@ -187,7 +187,7 @@ export const projectDetails = [
     id: 8,
     project_name: 'Prime Flix',
     project_desc: 'Este projeto foi realizado com React, realizando a consulta de uma API externa para a construção da aplicação.',
-    tech_stack: ['React JS', 'CSS', 'TypeScript'],
+    tech_stack: ['React', 'CSS', 'TypeScript'],
     project_img: PrimeFlix,
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/prime-flix',
