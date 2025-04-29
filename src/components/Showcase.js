@@ -45,10 +45,11 @@ const Showcase = () => {
           size="h3"
           $top=".5rem"
           $bottom="1rem"
+          $align="center"
         >
           Olá! Eu sou <BlueText>Marcos Laurindo Ferreira</BlueText>
         </Heading>
-        <Heading as="h1" size="h1">
+        <Heading as="h1" size="h1" $align="center">
           <BlueText>UX/UI Developer</BlueText>
         </Heading>
         <ParaText as="p" $top="2rem" $bottom="4rem" $mWidth="600px" $center>
