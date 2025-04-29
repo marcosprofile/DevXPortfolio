@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const SkillsContainer = styled.div`
   max-width: 1280px;
   overflow: hidden;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile }) {
+    overflow: visible;
+  }
 `
 
 export const SkillsCarouselContainer = styled.div`
