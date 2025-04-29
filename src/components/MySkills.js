@@ -44,7 +44,7 @@ const MySkills = () => {
   return (
     <PaddingContainer
       id="skills"
-      $top="10%"
+      $top="5%"
       $bottom="5%"
       $responsiveLeft="1rem"
       $responsiveRight="1rem"

@@ -17,13 +17,14 @@ import { BsGithub, BsBehance, BsLinkedin, BsEnvelope, BsAward } from 'react-icon
 
 import CheckBlue from '../assets/check-blue.svg'
 
-import { fadeInLeftVariant, fadeInTopVariant } from '../utils/Variants'
+import { fadeInTopVariant } from '../utils/Variants'
 
 const Showcase = () => {
   return (
     <PaddingContainer
       id="inicio"
-      $top="12%"
+      $mTop="78px"
+      $top="16%"
       $bottom="10%"
       $responsiveLeft="1rem"
       $responsiveRight="1rem"

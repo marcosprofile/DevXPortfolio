@@ -17,7 +17,7 @@ const MyProjects = () => {
   return (
     <PaddingContainer
       id="Projects"
-      $top="10%"
+      $top="5%"
       $bottom="5%"
       $responsiveTop="20%"
       $responsiveLeft="1rem"
