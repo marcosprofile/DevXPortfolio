@@ -203,6 +203,6 @@ export const projectDetails = [
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/Clone-Netflix',
     project_url: 'https://netflixclone-site.vercel.app/',
-    reverse: true,
+    reverse: false,
   }
 ]
