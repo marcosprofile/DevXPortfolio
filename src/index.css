@@ -27,16 +27,6 @@ body {
   border-radius: 10px;
 }
 
-.disabled {
-  opacity: .4;
-
-  &:hover {
-    background-color: transparent !important;
-    color: #FFF !important;
-    cursor: not-allowed;
-  }
-}
-
 @media (max-width: 1025px) {
   footer {
     p {

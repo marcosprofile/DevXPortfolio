@@ -43,56 +43,55 @@ const Project = ({ data }) => {
         initial="hidden"
         whileInView="visible"
       >
-        <FlexContainer $align="center" $gap="1rem">
-          <Heading as="h3" size="h3" $bottom="1rem">
-            {data.project_name}
-          </Heading>
-
-          <IconContainer color="blue" size="2rem" href={data.github} target="_blank">
-            <FaGithub />
-          </IconContainer>
-        </FlexContainer>
-
-        <PaddingContainer $top="1rem">
-          <FlexContainer $gap="1rem" $alignCenter>
+        <PaddingContainer $top="1rem" $bottom="1rem">
+          <FlexContainer $gap="1rem">
             {data.tech_stack.map((stack, id) => (
               <TechStackCard key={id}>{stack}</TechStackCard>
             ))}
           </FlexContainer>
         </PaddingContainer>
 
-        <ParaText $top="1.5rem" $bottom="2rem">
+        <FlexContainer $align="center" $gap="1rem" $responsiveFlex>
+          <Heading as="h3" size="h3">
+            {data.project_name}
+          </Heading>
+
+          <IconContainer color="blue" size="1.5rem" href={data.github} target="_blank">
+            <FaGithub />
+          </IconContainer>
+        </FlexContainer>
+
+        <ParaText $top=".5rem" $bottom="2.5rem">
           {data.project_desc}
         </ParaText>
 
-        <Button
-          href={data.project_url || '#'}
-          target={data.project_url ? '_blank' : undefined}
-          className={isDisabledPreview ? 'disabled' : ''}
-          $mr="1rem"
-          title={isDisabledPreview ? 'Website indisponível' : ''}
-          onClick={(e) => {
-            if (isDisabledPreview) e.preventDefault()
-          }}
-        >
-          <FaLaptop />
-          Website
-        </Button>
+        <FlexContainer $responsiveFlex $gap="1rem">
+          <Button
+            href={data.project_url || '#'}
+            target={data.project_url ? '_blank' : undefined}
+            className={isDisabledPreview ? 'disabled' : ''}
+            title={isDisabledPreview ? 'Website indisponível' : ''}
+            onClick={(e) => {
+              if (isDisabledPreview) e.preventDefault()
+            }}
+          >
+            <FaLaptop />
+            Ver Website
+          </Button>
 
-        <Button
-          href={data.project_code || '#'}
-          target={data.project_code ? '_blank' : undefined}
-          className={isDisabledCode ? 'disabled' : ''}
-          $mr="1rem"
-          title={isDisabledCode ? 'Código indisponível' : ''}
-          onClick={(e) => {
-            if (isDisabledCode) e.preventDefault()
-          }}
-        >
-          <FaLaptopCode />
-          Código
-        </Button>
-
+          <Button
+            href={data.project_code || '#'}
+            target={data.project_code ? '_blank' : undefined}
+            className={isDisabledCode ? 'disabled' : ''}
+            title={isDisabledCode ? 'Código indisponível' : ''}
+            onClick={(e) => {
+              if (isDisabledCode) e.preventDefault()
+            }}
+          >
+            <FaLaptopCode />
+            Ver Código
+          </Button>
+        </FlexContainer>
       </motion.div>
 
       {/* --right-section-project-- */}

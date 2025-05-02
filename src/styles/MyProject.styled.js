@@ -5,8 +5,9 @@ export const TechStackCard = styled.div`
   background-color: ${({ theme }) => theme.colors.secondary};
   color: ${({ theme }) => theme.colors.primary};
   font-weight: bold;
-  padding: .3rem 1rem;
-  border-radius: 8px;
+  font-size: .75rem;
+  padding: .3rem .5rem;
+  border-radius: 2rem;
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     margin-right: 1rem;
@@ -17,14 +18,22 @@ export const TechStackCard = styled.div`
 export const ProjectImageContainer = styled.div`
   display: flex;
   justify-content: ${({ justify }) => justify};
+  max-width: 592px;
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: .75rem;
 `;
 
 export const ProjectImage = styled.img`
-  border: 1px solid ${({ theme }) => theme.colors.white};
   width: 100%;
   height: 300px;
   object-fit: cover;
   border-radius: 10px;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 100%;

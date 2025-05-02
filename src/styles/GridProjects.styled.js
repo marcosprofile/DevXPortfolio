@@ -12,7 +12,12 @@ export const GridContainer = styled.ul`
   }
 `
 
-export const ListItem = styled.li``
+export const ListItem = styled.li`
+  width: 414px;
+  height: 254px;
+  border-radius: .75rem;
+  overflow: hidden;
+`
 
 export const Image = styled.img`
   width: 100%;
@@ -24,6 +29,7 @@ export const Image = styled.img`
   &:hover {
     transition: all .3s ease-out;
     box-shadow: 0 0 24px rgba(255, 255, 255, .5);
+    transform: scale(1.05);
   }
 
   @media (max-width: 768px) {

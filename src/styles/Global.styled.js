@@ -117,6 +117,7 @@ export const ParaText = styled(PaddingContainer)`
 
 export const IconContainer = styled.a`
   font-size: ${({ size }) => size};
+  max-height: 24px;
   cursor: pointer;
   color: ${({ color, theme }) => {
     switch (color) {
@@ -138,17 +139,21 @@ export const Button = styled.a`
   justify-content: center;
   gap: .5rem;
   width: max-content;
-  padding: 1rem 2rem;
+  padding: .75rem 1.5rem;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.white};
-  background-color: ${({ theme }) => theme.colors.primary_light};
-  border: 1px solid ${({ theme }) => theme.colors.gray};
+  background-color: #FFFFFF20;
   margin-right: ${({ $mr }) => $mr};
-  border-radius: 6px;
+  border-radius: .5rem;
   cursor: pointer;
   transition: all .2s linear;
 
-  &:hover {
+  &.disabled {
+    opacity: .4;
+    cursor: not-allowed;
+  }
+
+  &:not(.disabled):hover {
     color: ${({ theme }) => theme.colors.primary_light};
     background-color: ${({ theme }) => theme.colors.white};
   };
