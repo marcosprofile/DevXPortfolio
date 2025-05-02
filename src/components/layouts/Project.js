@@ -44,7 +44,7 @@ const Project = ({ data }) => {
         whileInView="visible"
       >
         <PaddingContainer $top="1rem" $bottom="1rem">
-          <FlexContainer $gap="1rem">
+          <FlexContainer $gap=".5rem">
             {data.tech_stack.map((stack, id) => (
               <TechStackCard key={id}>{stack}</TechStackCard>
             ))}
