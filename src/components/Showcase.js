@@ -83,19 +83,19 @@ const Showcase = () => {
 
         {/* --social-icons-- */}
         <FlexContainer $justify="center" $gap="1.25rem" $responsiveFlex="true">
-          <IconContainer color="white" size="2rem" href="https://github.com/marcosprofile" target="_blank">
+          <IconContainer color="white" size="2rem" href="https://github.com/marcosprofile" target="_blank" aria-label="Acesse meus repositórios no GitHub">
             <BsGithub />
           </IconContainer>
-          <IconContainer color="white" size="2rem" href="https://www.behance.net/marcoslferreira" target="_blank">
+          <IconContainer color="white" size="2rem" href="https://www.behance.net/marcoslferreira" target="_blank" aria-label="Acesse meus projetos no Behance">
             <BsBehance />
           </IconContainer>
-          <IconContainer color="white" size="2rem" href="https://www.linkedin.com/in/marcosdesigntech/" target="_blank">
+          <IconContainer color="white" size="2rem" href="https://www.linkedin.com/in/marcosdesigntech/" target="_blank" aria-label="Conecte-se comigo no LinkedIn">
             <BsLinkedin />
           </IconContainer>
-          <IconContainer color="white" size="2rem" href="mailto:marcos.laurindo@marcotech.dev.br">
+          <IconContainer color="white" size="2rem" href="mailto:marcos.laurindo@marcotech.dev.br" aria-label="Entre em contato comigo por e-mail">
             <BsEnvelope />
           </IconContainer>
-          <IconContainer color="white" size="2rem" href="https://cursos.alura.com.br/user/marcos-laurindo1997" target="_blank">
+          <IconContainer color="white" size="2rem" href="https://cursos.alura.com.br/user/marcos-laurindo1997" target="_blank" aria-label="Acesse meus certificados da Alura">
             <BsAward />
           </IconContainer>
         </FlexContainer>
