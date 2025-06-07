@@ -31,10 +31,6 @@ const Showcase = () => {
       $responsiveTop="8rem"
     >
       <FlexContainer
-        as={motion.div}
-        variants={fadeInTopVariant}
-        initial="hidden"
-        whileInView="visible"
         $align="center"
         $justify="center"
         $direction="column"
@@ -57,7 +53,16 @@ const Showcase = () => {
         </ParaText>
 
         <PaddingContainer $bottom="3.5rem">
-          <FlexContainer $justify="center" $gap="1rem" $flexWrap="wrap" $responsiveFlex>
+          <FlexContainer
+            as={motion.div}
+            variants={fadeInTopVariant}
+            initial="hidden"
+            whileInView="visible"
+            $justify="center"
+            $gap="1rem"
+            $flexWrap="wrap"
+            $responsiveFlex
+          >
             <Chip>
               <Image src={CheckBlue} alt="Check icon" />
               Design System
