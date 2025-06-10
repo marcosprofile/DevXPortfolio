@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Container, FadeImage, FixedContainer, MainBody } from '../styles/Global.styled'
 import MyProjects from '../components/MyProjects'
 
@@ -11,7 +11,7 @@ import { RoundedButton } from '../components/RoundedButton'
 import { motion, useScroll } from 'framer-motion'
 
 
-const Projects = () => {
+export default function Projects() {
   const [showButton, setShowButton] = useState(false);
   const { scrollY } = useScroll();
 
@@ -45,5 +45,3 @@ const Projects = () => {
     </MainBody>
   )
 }
-
-export default Projects

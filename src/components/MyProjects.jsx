@@ -1,19 +1,17 @@
-import React from 'react'
-
 import { motion } from 'framer-motion'
 
-// import global styles
 import {
   PaddingContainer,
   Heading,
   BlueText,
-} from './../styles/Global.styled'
+} from '../styles/Global.styled'
 import Project from './layouts/Project'
 
 import { projectDetails } from '../utils/Data'
 import { fadeInTopVariant } from '../utils/Variants'
 
-const MyProjects = () => {
+
+export default function MyProjects() {
   return (
     <PaddingContainer
       id="Projects"
@@ -53,5 +51,3 @@ const MyProjects = () => {
     </PaddingContainer>
   )
 }
-
-export default MyProjects

@@ -1,8 +1,5 @@
-import React from 'react'
-
 import { motion } from 'framer-motion'
 
-// import global styles
 import {
   PaddingContainer,
   Heading,
@@ -12,10 +9,10 @@ import {
 } from '../styles/Global.styled'
 
 import { FaWhatsapp, FaRegEnvelope } from "react-icons/fa6"
-
 import { fadeInBottomVariant } from '../utils/Variants'
 
-const Contact = () => {
+
+export default function Contact() {
   return (
     <PaddingContainer id="contato" $top="5%" $bottom="10%">
       <Heading
@@ -62,5 +59,3 @@ const Contact = () => {
     </PaddingContainer>
   )
 }
-
-export default Contact

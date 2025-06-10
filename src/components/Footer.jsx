@@ -1,9 +1,6 @@
-import React from 'react'
-
-// import global styles
 import { PaddingContainer, Heading } from '../styles/Global.styled'
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer>
       <PaddingContainer $top="2.5rem" $bottom="2.5rem">
@@ -14,5 +11,3 @@ const Footer = () => {
     </footer>
   )
 }
-
-export default Footer

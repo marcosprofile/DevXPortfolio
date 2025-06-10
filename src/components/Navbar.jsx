@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
-// import global styles
 import {
   FlexContainer,
   PaddingContainer,
   Container,
 } from '../styles/Global.styled'
 
-// import Navbar styles
 import {
   NavbarContainer,
   NavLinkContainer,
@@ -17,11 +15,10 @@ import {
 
 import { theme } from '../utils/Theme'
 import { navLinks } from '../utils/Data'
-
 import { BsArrowLeftShort } from "react-icons/bs";
 
 
-const Navbar = () => {
+export default function Navbar () {
   const location = useLocation()
   const [sticky, setSticky] = useState(false)
 
@@ -64,5 +61,3 @@ const Navbar = () => {
     </NavbarContainer>
   )
 }
-
-export default Navbar

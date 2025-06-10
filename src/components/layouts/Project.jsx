@@ -1,8 +1,5 @@
-import React from 'react'
-
 import { motion } from 'framer-motion'
 
-// import global styles
 import {
   PaddingContainer,
   Heading,
@@ -10,9 +7,8 @@ import {
   ParaText,
   IconContainer,
   Button,
-} from './../../styles/Global.styled'
+} from '../../styles/Global.styled'
 
-// import project styles
 import {
   TechStackCard,
   ProjectImageContainer,
@@ -27,7 +23,8 @@ import {
 
 import { FaLaptop, FaLaptopCode } from "react-icons/fa6"
 
-const Project = ({ data }) => {
+
+export default function Project({ data }) {
   const isDisabledPreview = !data.project_url
   const isDisabledCode = !data.project_code
 
@@ -107,5 +104,3 @@ const Project = ({ data }) => {
     </FlexContainer>
   )
 }
-
-export default Project

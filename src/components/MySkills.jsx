@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { motion } from 'framer-motion'
 import { carousel, fadeInRightVariant, fadeInTopVariant } from '../utils/Variants'
 import { Skills } from '../utils/Data'
@@ -27,7 +25,7 @@ import {
 import { useIsMobile } from '../hooks/useIsMobile'
 
 
-const MySkills = () => {
+export default function MySkills() {
   const isMobile = useIsMobile()
   const duplicatedSkills = [...Skills, ...Skills, ...Skills, ...Skills]
 
@@ -114,5 +112,3 @@ const MySkills = () => {
     </PaddingContainer>
   )
 }
-
-export default MySkills

@@ -1,9 +1,7 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-
 import { GridContainer, ListItem, Image } from '../styles/GridProjects.styled'
 
-// import global styles
 import {
   PaddingContainer,
   Heading,
@@ -13,10 +11,10 @@ import {
 } from '../styles/Global.styled'
 
 import { fadeInTopVariant, fadeInRightVariant, container, item } from '../utils/Variants'
-
 import { GridSixProjects } from '../utils/Data'
 
-const GridProjects = () => {
+
+export default function GridProjects() {
   const ref = useRef(null)
   const isInView = useInView(ref, { triggerOnce: false })
 
@@ -90,5 +88,3 @@ const GridProjects = () => {
     </PaddingContainer>
   )
 }
-
-export default GridProjects

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Container, FadeImage, MainBody } from '../styles/Global.styled'
 import Showcase from '../components/Showcase'
 import MySkills from '../components/MySkills'
@@ -11,7 +10,7 @@ import MouseFollower from '../components/MouseFollower'
 import Footer from '../components/Footer'
 import GridProjects from '../components/GridProjects'
 
-const Home = () => {
+export default function Home() {
   return (
     <MainBody>
       <ScrollProgressBar />
@@ -29,5 +28,3 @@ const Home = () => {
     </MainBody>
   )
 }
-
-export default Home

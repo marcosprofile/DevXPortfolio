@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 
 import {
@@ -12,14 +11,12 @@ import {
   Image
 } from '../styles/Global.styled'
 
-// importing react-icons
 import { BsGithub, BsBehance, BsLinkedin, BsEnvelope, BsAward } from 'react-icons/bs'
-
 import CheckBlue from '../assets/check-blue.svg'
-
 import { fadeInTopVariant } from '../utils/Variants'
 
-const Showcase = () => {
+
+export default function Showcase() {
   return (
     <PaddingContainer
       id="inicio"
@@ -104,4 +101,3 @@ const Showcase = () => {
   )
 }
 
-export default Showcase
