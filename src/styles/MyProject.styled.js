@@ -8,11 +8,6 @@ export const TechStackCard = styled.div`
   font-size: .75rem;
   padding: .3rem .5rem;
   border-radius: 2rem;
-
-  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-  };
 `;
 
 export const ProjectImageContainer = styled.div`

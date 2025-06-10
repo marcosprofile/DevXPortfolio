@@ -14,7 +14,13 @@ import { fadeInBottomVariant } from '../utils/Variants'
 
 export default function Contact() {
   return (
-    <PaddingContainer id="contato" $top="5%" $bottom="10%">
+    <PaddingContainer
+      id="contato"
+      $top="5%"
+      $bottom="10%"
+      $responsiveLeft="1rem"
+      $responsiveRight="1rem"
+    >
       <Heading
         as={motion.h4}
         variants={fadeInBottomVariant}

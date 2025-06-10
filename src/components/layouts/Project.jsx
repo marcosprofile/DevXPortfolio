@@ -41,7 +41,7 @@ export default function Project({ data }) {
         whileInView="visible"
       >
         <PaddingContainer $top="1rem" $bottom="1rem">
-          <FlexContainer $gap=".5rem">
+          <FlexContainer $gap=".5rem" $responsiveFlex>
             {data.tech_stack.map((stack, id) => (
               <TechStackCard key={id}>{stack}</TechStackCard>
             ))}

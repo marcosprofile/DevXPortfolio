@@ -6,14 +6,15 @@ export const GridContainer = styled.ul`
   gap: 1.25rem;
   list-style: none;
 
-  @media (max-width: 1200px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile }) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 `
 
 export const ListItem = styled.li`
-  width: 414px;
+  width: 100%;
+  max-width: 414px;
   height: 254px;
   border-radius: .75rem;
   overflow: hidden;

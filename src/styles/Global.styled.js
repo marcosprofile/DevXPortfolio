@@ -16,9 +16,8 @@ export const MainBody = styled.div`
 `;
 
 export const Container = styled.div`
-  width: 90%;
+  width: 100%;
   max-width: 1280px;
-  margin: auto;
 `;
 
 export const PaddingContainer = styled.div`
@@ -163,6 +162,7 @@ export const Button = styled.a`
     text-align: center;
     margin-left: 0;
     margin-bottom: 1rem;
+    font-size: .875rem;
   };
 `;
 

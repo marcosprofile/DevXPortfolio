@@ -4,10 +4,6 @@ export const SkillsContainer = styled.div`
   max-width: 1280px;
   overflow: hidden;
   position: relative;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile }) {
-    overflow: visible;
-  }
 `
 
 export const SkillsLinearBg = styled.div`
@@ -43,7 +39,7 @@ export const SkillCard = styled.div`
   svg { font-size: 3.5rem };
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile }) {
-    margin-top: ${({ $marginTop }) => $marginTop ? '2rem' : ''};
+    margin-top: ${({ $marginTop }) => $marginTop ? '1rem' : ''};
   }
 `;
 
