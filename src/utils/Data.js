@@ -138,7 +138,7 @@ export const projectDetails = [
   {
     id: 0,
     project_name: 'Agenda AI',
-    project_desc: 'Projeto desenvolvido com o intuito de aprimorar meus conhecimentos no framework Angular.',
+    project_desc: 'Criei essa landing page com React e TailwindCSS para treinar uma interface limpa e responsiva. O foco foi entregar uma experiência simples e direta para um sistema de agendamentos. Projeto rápido, mas com atenção aos detalhes!',
     tech_stack: ['React', 'Tailwind CSS'],
     project_img: AgendaAI,
     github: 'https://github.com/marcosprofile',
