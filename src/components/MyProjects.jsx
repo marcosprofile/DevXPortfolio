@@ -43,7 +43,7 @@ export default function MyProjects() {
       </Heading>
 
       {projectDetails.map((project) => (
-        <PaddingContainer key={project.id} $top="5rem" $bottom="5rem">
+        <PaddingContainer key={project.id} $top="5rem" $bottom="5rem" $responsiveTop="2.5rem" $responsiveBottom="2.5rem">
           <Project data={project} />
         </PaddingContainer>
       ))}
