@@ -16,7 +16,8 @@ import {
   SkillsCarouselContainer,
   SkillCard,
   Icon,
-  SkillsContainer
+  SkillsContainer,
+  SkillsLinearBg
 } from '../styles/MySkills.styled'
 
 import {
@@ -95,6 +96,7 @@ const MySkills = () => {
         </FlexContainer>
 
         <SkillsContainer>
+          <SkillsLinearBg />
           <SkillsCarouselContainer
             as={motion.div}
             variants={adjustedVariant}

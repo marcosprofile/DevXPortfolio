@@ -3,10 +3,20 @@ import styled from 'styled-components'
 export const SkillsContainer = styled.div`
   max-width: 1280px;
   overflow: hidden;
+  position: relative;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile }) {
     overflow: visible;
   }
+`
+
+export const SkillsLinearBg = styled.div`
+  background: linear-gradient(90deg, #0F172A 0%, transparent 50%, #0F172A 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 52%;
 `
 
 export const SkillsCarouselContainer = styled.div`
