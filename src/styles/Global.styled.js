@@ -211,16 +211,11 @@ export const Image = styled.img`
 
 export const FixedContainer = styled.div`
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  width: 100%;
   position: fixed;
-  right: 2.5rem;
+  left: 0;
   bottom: 2.5rem;
-  
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    width: 100%;
-    left: 0;
-    justify-content: center;
-  }
 `
 
 export const BackToTop = styled.a`
