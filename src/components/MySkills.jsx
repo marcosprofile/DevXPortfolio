@@ -88,7 +88,7 @@ export default function MySkills() {
             <TbDeviceDesktopCode />
             <Heading as="h3" size="h3">Front-end</Heading>
             <ParaText $top=".75rem" $center>
-              Como desenvolvedor tenho experiência em desenvolvimento front-end, com conhecimento em JavaScrip, React, Angular, HTML, CSS e SASS. Tenho experiência na construção de interfaces de responsivas. Com conhecimento no uso do React, posso criar interfaces escaláveis e de fácil manutenção. Isso me permite criar um código eficiente e sustentável que pode se adequar às necessidades de mudança de um negócio.
+              Como desenvolvedor tenho experiência em desenvolvimento front-end, com conhecimento em HTML, CSS, JavaScrip, TypeScript, React, Angular, SASS e TailwindCSS. Tenho experiência na construção de interfaces de responsivas. Com conhecimento no uso do React, posso criar interfaces escaláveis e de fácil manutenção. Isso me permite criar um código eficiente e sustentável que pode se adequar às necessidades de mudança de um negócio.
             </ParaText>
           </SkillCard>
         </FlexContainer>
