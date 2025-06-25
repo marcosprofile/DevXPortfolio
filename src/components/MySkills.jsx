@@ -81,14 +81,14 @@ export default function MySkills() {
             <TbDeviceDesktopAnalytics />        
             <Heading as="h3" size="h3">UI/UX Designer</Heading>
             <ParaText $top=".75rem" $center>
-              Como UX/UI Designer tenho experiência na projeção de interfaces intuitivas e funcionais com base em pesquisas de mercado, buscando os melhores conceitos de UX e UI para a concepção do produto final. Tenho experiência na construção de protótipos navegáveis, desde wireframe até a construção da UI em alta fidelidade.
+              Atuo com design de interfaces focado na experiência do usuário, unindo usabilidade, estética e funcionalidade. Tenho vivência em todo o processo de design — desde a pesquisa com usuários e benchmarks até a criação de wireframes, protótipos navegáveis e interfaces em alta fidelidade. Minha abordagem é centrada no usuário, mas alinhada aos objetivos de negócio, garantindo soluções práticas e bem fundamentadas em boas práticas de UX e UI.
             </ParaText>
           </SkillCard>
           <SkillCard $marginTop>
             <TbDeviceDesktopCode />
             <Heading as="h3" size="h3">Front-end</Heading>
             <ParaText $top=".75rem" $center>
-              Como desenvolvedor tenho experiência em desenvolvimento front-end, com conhecimento em HTML, CSS, JavaScript, TypeScript, React, Angular, SASS e TailwindCSS. Tenho experiência na construção de interfaces de responsivas. Com conhecimento no uso do React, posso criar interfaces escaláveis e de fácil manutenção. Isso me permite criar um código eficiente e sustentável que pode se adequar às necessidades de mudança de um negócio.
+              Tenho experiência no desenvolvimento de interfaces web responsivas, com foco em performance, acessibilidade e manutenção do código. Trabalho com HTML, CSS, JavaScript e TypeScript, além de frameworks como React e Angular. Também utilizo pré-processadores como SASS e frameworks utilitários como TailwindCSS para acelerar a produção. Busco sempre escrever um código limpo e escalável, facilitando futuras evoluções do produto.
             </ParaText>
           </SkillCard>
         </FlexContainer>
