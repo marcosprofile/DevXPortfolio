@@ -50,7 +50,7 @@ export default function Showcase() {
           <BlueText>UX/UI Developer</BlueText>
         </Heading>
         <ParaText as="p" $top="2rem" $bottom="4rem" $mWidth="600px" $center>
-          Apaixonado por criar experiências digitais intuitivas e funcionais. Especialista no Figma e Front-end, combino design e código para entregar interfaces responsivas e de alta fidelidade.
+          UI/UX Designer e Desenvolvedor Front-end com mais de 3 anos de experiência, entregando soluções completas — do protótipo à implementação em produção.
         </ParaText>
 
         <PaddingContainer $bottom="3.5rem">
