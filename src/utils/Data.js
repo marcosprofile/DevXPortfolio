@@ -13,6 +13,7 @@ import { SiFramer } from "react-icons/si";
 
 import { BiLogoTypescript } from "react-icons/bi";
 
+import Tecboard from '../assets/projetos/tecboard.png'
 import AgendaAI from '../assets/projetos/agenda-ai.png'
 import Gemini from '../assets/projetos/gemini.png'
 import AtomicWork from '../assets/projetos/atomicwork.png'
@@ -104,49 +105,60 @@ export const navLinks = [
 export const GridSixProjects = [
   {
     id: 0,
+    name: 'Tecboard',
+    image: Tecboard
+  },
+  {
+    id: 1,
     name: 'Agenda AI',
     image: AgendaAI
   },
   {
-    id: 1,
+    id: 2,
     name: 'Gemini UI',
     image: Gemini
   },
   {
-    id: 2,
+    id: 3,
     name: 'Design Agency',
     image: DesignAgency
   },
   {
-    id: 3,
+    id: 4,
     name: 'Prime Flix',
     image: PrimeFlix
   },
   {
-    id: 4,
+    id: 5,
     name: 'Jornada Milhas',
     image: JornadaMilhas
-  },
-  {
-    id: 5,
-    name: 'Virtual Bookcase',
-    image: VirtualBookcase
   }
 ]
 
 export const projectDetails = [
   {
     id: 0,
+    project_name: 'Tecboard',
+    project_desc: 'Criei um projeto completo com React 19, organizando eventos de tecnologia com um layout moderno e temas personalizados',
+    tech_stack: ['React', 'Tailwind CSS'],
+    project_img: Tecboard,
+    github: 'https://github.com/marcosprofile',
+    project_code: 'https://github.com/marcosprofile/tecboard',
+    project_url: 'https://tecboard-tawny.vercel.app/',
+    reverse: true,
+  },
+  {
+    id: 1,
     project_name: 'Agenda AI',
     project_desc: 'Criei essa landing page com React e TailwindCSS para treinar uma interface limpa e responsiva. O foco foi entregar uma experiência simples e direta para um sistema de agendamentos. Projeto rápido, mas com atenção aos detalhes!',
     tech_stack: ['React', 'Tailwind CSS'],
     project_img: AgendaAI,
     github: 'https://github.com/marcosprofile',
     project_url: 'https://agenda-ai-six.vercel.app/',
-    reverse: true,
+    reverse: false,
   },
   {
-    id: 1,
+    id: 2,
     project_name: 'Gemini UI',
     project_desc: 'Projeto desenvolvido com o intuito de aprimorar meus conhecimentos no framework Angular.',
     tech_stack: ['Angular', 'CSS', 'TypeScript'],
@@ -154,10 +166,10 @@ export const projectDetails = [
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/gemini-ui',
     project_url: 'https://gemini-ui-delta.vercel.app/',
-    reverse: false,
+    reverse: true,
   },
   {
-    id: 2,
+    id: 3,
     project_name: 'Atomicwork',
     project_desc: 'Projeto encontrado na comunidade do figma, desenvolvido com o intuito de aperfeiçoar meus conhecimentos na construção de componentes com Angular.',
     tech_stack: ['Angular', 'CSS', 'TypeScript'],
@@ -165,10 +177,10 @@ export const projectDetails = [
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/landing-page',
     project_url: 'https://atomicwork.vercel.app/',
-    reverse: true,
+    reverse: false,
   },
   {
-    id: 3,
+    id: 4,
     project_name: 'Projeto Unes',
     project_desc: 'Projeto desenvolvido para fins de estudo, aplicando conceitos de Flexbox',
     tech_stack: ['HTML', 'CSS'],
@@ -176,10 +188,10 @@ export const projectDetails = [
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/projeto_unes',
     project_url: 'https://projetounes.vercel.app/',
-    reverse: false,
+    reverse: true,
   },
   {
-    id: 4,
+    id: 5,
     project_name: 'Design Agency',
     project_desc: 'Projeto encontrado na comunidade do figma, desenvolvido com o intuito de aperfeiçoar meus conhecimentos na construção de layouts com HTML, CSS e JavaScript.',
     tech_stack: ['HTML', 'CSS', 'JavaScript'],
@@ -187,20 +199,20 @@ export const projectDetails = [
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/AgencyWeb',
     project_url: 'https://agency-web-cyan.vercel.app/',
-    reverse: true,
+    reverse: false,
   },
   {
-    id: 5,
+    id: 6,
     project_name: 'CRUD Angular',
     project_desc: 'Este projeto foi desenvolvido com angular 17 com o intuito de aprimorar meus conhecimentos no framework.',
     tech_stack: ['Angular', 'TypeScript', 'CSS'],
     project_img: CrudAngular,
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/CRUD-Angular',
-    reverse: false,
+    reverse: true,
   },
   {
-    id: 6,
+    id: 7,
     project_name: 'Virtual Bookcase',
     project_desc: 'Projeto criado apenas para organizar e consultar meus livros.',
     tech_stack: ['React', 'JavaScript', 'styled-components'],
@@ -208,10 +220,10 @@ export const projectDetails = [
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/virtual-bookcase',
     project_url: 'https://virtual-bookcase.vercel.app/',
-    reverse: true,
+    reverse: false,
   },
   {
-    id: 7,
+    id: 8,
     project_name: 'Jornada Milhas',
     project_desc: 'Este projeto foi realizado em busca de ampliar minhas habilidades no Angular, criando componentes reutilizáveis e organizando a aplicação. Aprendi a utilizar o Angular Material, explorando a ampla variedade de componentes disponíveis para criar uma interface moderna e atraente.',
     tech_stack: ['Angular', 'SASS', 'TypeScript'],
@@ -219,10 +231,10 @@ export const projectDetails = [
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/jornada-milhas',
     project_url: 'https://jornada-milhas-three.vercel.app/',
-    reverse: false,
+    reverse: true,
   },
   {
-    id: 8,
+    id: 9,
     project_name: 'ToDo List',
     project_desc: 'Este projeto foi realizado em busca de ampliar minhas habilidades no Angular, criando uma aplicação para listar, editar e remover tarefas.',
     tech_stack: ['Angular', 'SASS', 'TypeScript'],
@@ -230,10 +242,10 @@ export const projectDetails = [
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/todo-list-angular',
     project_url: 'https://todo-list-angular-ecru.vercel.app/',
-    reverse: true,
+    reverse: false,
   },
   {
-    id: 9,
+    id: 10,
     project_name: 'Prime Flix',
     project_desc: 'Este projeto foi realizado com React, realizando a consulta de uma API externa para a construção da aplicação.',
     tech_stack: ['React', 'CSS', 'TypeScript'],
@@ -241,10 +253,10 @@ export const projectDetails = [
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/prime-flix',
     project_url: 'https://prime-flix-one.vercel.app/',
-    reverse: false,
+    reverse: true,
   },
   {
-    id: 10,
+    id: 11,
     project_name: 'Netflix Site (clone)',
     project_desc: 'Projeto criado com base no site antigo da netflix, apenas para praticar estilizações de layout.',
     tech_stack: ['HTML', 'CSS'],
@@ -252,6 +264,6 @@ export const projectDetails = [
     github: 'https://github.com/marcosprofile',
     project_code: 'https://github.com/marcosprofile/Clone-Netflix',
     project_url: 'https://netflixclone-site.vercel.app/',
-    reverse: true,
+    reverse: false,
   }
 ]
