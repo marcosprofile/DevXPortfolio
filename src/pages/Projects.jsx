@@ -27,7 +27,6 @@ export default function Projects() {
     <MainBody>
       <ScrollProgressBar />
       <Container>
-        <MouseFollower />
         <MyProjects />
         <FixedContainer
           as={motion.div}

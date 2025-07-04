@@ -15,7 +15,6 @@ export default function Home() {
     <MainBody>
       <ScrollProgressBar />
       <Container>
-        <MouseFollower />
         <Showcase />
         <MySkills />
         <GridProjects />
