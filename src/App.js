@@ -4,6 +4,7 @@ import { MainBody } from './styles/Global.styled'
 import Navbar from './components/Navbar'
 import { theme } from './utils/Theme'
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
         <RoutesApp />
         <SpeedInsights />
+        <Analytics />
       </MainBody>
     </ThemeProvider>
   );
