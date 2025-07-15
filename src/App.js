@@ -1,9 +1,9 @@
-import React from 'react'
 import RoutesApp from './routes'
 import { ThemeProvider } from 'styled-components'
 import { MainBody } from './styles/Global.styled'
 import Navbar from './components/Navbar'
 import { theme } from './utils/Theme'
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
       <MainBody>
         <Navbar />
         <RoutesApp />
+        <SpeedInsights />
       </MainBody>
     </ThemeProvider>
   );
