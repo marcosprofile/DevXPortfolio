@@ -11,7 +11,8 @@ import {
 } from '../styles/Global.styled'
 
 import { fadeInTopVariant, fadeInRightVariant, container, item } from '../utils/Variants'
-import { cmsService, gridProjectsQuery } from '../db/cmsService'
+import { gridProjectsQuery } from '../graphql/projects'
+import { cmsService } from '../db/cmsService'
 
 
 export default function GridProjects() {

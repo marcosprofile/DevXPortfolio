@@ -8,8 +8,11 @@ import {
 import Project from './layouts/Project'
 
 import { fadeInTopVariant } from '../utils/Variants'
-import { cmsService, projectsQuery } from '../db/cmsService'
 import { useEffect, useState } from 'react'
+
+import { cmsService } from '../db/cmsService'
+import { projectsQuery } from '../graphql/projects'
+
 
 export default function MyProjects() {
   const [projects, setProjects] = useState([])
