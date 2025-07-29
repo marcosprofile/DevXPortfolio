@@ -7,11 +7,26 @@ import {
 } from '../styles/Global.styled'
 import Project from './layouts/Project'
 
-import { projectDetails } from '../utils/Data'
 import { fadeInTopVariant } from '../utils/Variants'
-
+import { cmsService, projectsQuery } from '../db/cmsService'
+import { useEffect, useState } from 'react'
 
 export default function MyProjects() {
+  const [projects, setProjects] = useState([])
+
+  useEffect(() => {
+    async function fetchProjects() {
+      try {
+        const data = await cmsService({ query: projectsQuery })
+        setProjects(data.allContentProjects)
+      } catch (err) {
+        console.error('Erro ao buscar projetos:', err)
+      }
+    }
+
+    fetchProjects()
+  }, [])
+
   return (
     <PaddingContainer
       id="Projects"
@@ -42,7 +57,7 @@ export default function MyProjects() {
         O que <BlueText>eu desenvolvi</BlueText>
       </Heading>
 
-      {projectDetails.map((project) => (
+      {projects.map((project) => (
         <PaddingContainer key={project.id} $top="5rem" $bottom="5rem" $responsiveTop="2.5rem" $responsiveBottom="2.5rem">
           <Project data={project} />
         </PaddingContainer>

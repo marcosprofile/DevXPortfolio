@@ -22,11 +22,12 @@ import {
 } from '../../utils/Variants'
 
 import { FaLaptop, FaLaptopCode } from "react-icons/fa6"
+import { StructuredText } from 'react-datocms'
 
 
 export default function Project({ data }) {
-  const isDisabledPreview = !data.project_url
-  const isDisabledCode = !data.project_code
+  const isDisabledPreview = !data.projectWebsite
+  const isDisabledCode = !data.projectCode
 
   return (
     <FlexContainer
@@ -42,7 +43,7 @@ export default function Project({ data }) {
       >
         <PaddingContainer $top="1rem" $bottom="1rem">
           <FlexContainer $gap=".5rem" $responsiveFlex>
-            {data.tech_stack.map((stack, id) => (
+            {Array.isArray(data.stacks) && data.stacks.map((stack, id) => (
               <TechStackCard key={id}>{stack}</TechStackCard>
             ))}
           </FlexContainer>
@@ -50,22 +51,22 @@ export default function Project({ data }) {
 
         <FlexContainer $align="center" $gap="1rem" $responsiveFlex>
           <Heading as="h3" size="h3">
-            {data.project_name}
+            {data.title}
           </Heading>
 
-          <IconContainer color="blue" size="1.5rem" href={data.github} target="_blank">
+          <IconContainer color="blue" size="1.5rem" href="https://github.com/marcosprofile" target="_blank">
             <FaGithub />
           </IconContainer>
         </FlexContainer>
 
         <ParaText $top=".5rem" $bottom="2.5rem">
-          {data.project_desc}
+          <StructuredText data={data.description.value} />
         </ParaText>
 
         <FlexContainer $responsiveFlex $gap="1rem">
           <Button
-            href={data.project_url || '#'}
-            target={data.project_url ? '_blank' : undefined}
+            href={data.projectWebsite || '#'}
+            target={data.projectWebsite ? '_blank' : undefined}
             className={isDisabledPreview ? 'disabled' : ''}
             title={isDisabledPreview ? 'Website indisponível' : ''}
             onClick={(e) => {
@@ -77,8 +78,8 @@ export default function Project({ data }) {
           </Button>
 
           <Button
-            href={data.project_code || '#'}
-            target={data.project_code ? '_blank' : undefined}
+            href={data.projectCode || '#'}
+            target={data.projectCode ? '_blank' : undefined}
             className={isDisabledCode ? 'disabled' : ''}
             title={isDisabledCode ? 'Código indisponível' : ''}
             onClick={(e) => {
@@ -99,7 +100,7 @@ export default function Project({ data }) {
         initial="hidden"
         whileInView="visible"
       >
-        <ProjectImage src={data.project_img} alt={data.project_name} draggable="false" />
+        <ProjectImage src={data.thumbnail.url} alt={data.title} draggable="false" />
       </ProjectImageContainer>
     </FlexContainer>
   )

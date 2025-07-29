@@ -1,5 +1,5 @@
 import { motion, useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { GridContainer, ListItem, Image } from '../styles/GridProjects.styled'
 
 import {
@@ -11,12 +11,18 @@ import {
 } from '../styles/Global.styled'
 
 import { fadeInTopVariant, fadeInRightVariant, container, item } from '../utils/Variants'
-import { GridSixProjects } from '../utils/Data'
+import { cmsService, gridProjectsQuery } from '../db/cmsService'
 
 
 export default function GridProjects() {
   const ref = useRef(null)
   const isInView = useInView(ref, { triggerOnce: false })
+  const [projects, setProjects] = useState([])
+
+  useEffect(() => {
+    cmsService({ query: gridProjectsQuery })
+      .then(data => setProjects(data.allContentProjects))
+  }, [])
 
   return (
     <PaddingContainer
@@ -63,9 +69,9 @@ export default function GridProjects() {
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          {GridSixProjects.map((project) => (
+          {projects.map((project) => (
             <ListItem key={project.id} as={motion.li} variants={item}>
-              <Image src={project.image} title={project.name} />
+              <Image src={project.thumbnail.url} title={project.title} />
             </ListItem>
           ))}
         </GridContainer>
