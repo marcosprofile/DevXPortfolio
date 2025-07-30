@@ -10,7 +10,7 @@ import Project from './layouts/Project'
 import { fadeInTopVariant } from '../utils/Variants'
 import { useEffect, useState } from 'react'
 
-import { cmsService } from '../db/cmsService'
+import { cmsService } from '../api/cmsService'
 import { projectsQuery } from '../graphql/projects'
 
 

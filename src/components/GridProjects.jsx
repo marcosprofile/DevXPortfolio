@@ -12,7 +12,7 @@ import {
 
 import { fadeInTopVariant, fadeInRightVariant, container, item } from '../utils/Variants'
 import { gridProjectsQuery } from '../graphql/projects'
-import { cmsService } from '../db/cmsService'
+import { cmsService } from '../api/cmsService'
 
 
 export default function GridProjects() {

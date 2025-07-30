@@ -13,7 +13,7 @@ import {
   NavLinkBtn
 } from '../styles/Navbar.styled'
 
-import { theme } from '../utils/Theme'
+import { theme } from '../theme/Theme'
 import { navLinks } from '../utils/Data'
 import { BsArrowLeftShort } from "react-icons/bs";
 
