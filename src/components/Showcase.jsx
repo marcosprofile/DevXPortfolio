@@ -36,6 +36,7 @@ export default function Showcase() {
         $justify="center"
         $direction="column"
         $fullWidthChild="true"
+        $responsiveFlex="true"
       >
         <Heading
           as="h3"
