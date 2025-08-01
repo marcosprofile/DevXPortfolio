@@ -33,9 +33,6 @@ export default function MyProjects() {
   return (
     <PaddingContainer
       id="Projects"
-      $top="5%"
-      $bottom="5%"
-      $responsiveTop="20%"
       $responsiveLeft="1rem"
       $responsiveRight="1rem"
     >

@@ -28,9 +28,6 @@ export default function GridProjects() {
   return (
     <PaddingContainer
       id="projetos"
-      $top="10%"
-      $bottom="5%"
-      $responsiveTop="20%"
       $responsiveLeft="1rem"
       $responsiveRight="1rem"
     >

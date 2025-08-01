@@ -12,20 +12,26 @@ export const ProgressBar = styled.div`
 `;
 
 export const MainBody = styled.div`
+  display: flex;
+  justify-content: center;
   background-color: ${({ theme }) => theme.colors.primary};
+  width: 100%;
+  padding-top: 6rem;
 `;
 
 export const Container = styled.div`
   width: calc(100% - 1rem);
   max-width: 1280px;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 `;
 
 export const PaddingContainer = styled.div`
   padding-top: ${( props ) => props.$top};
   padding-bottom: ${( props ) => props.$bottom};
-  padding-left: ${( props ) => props.$left};
-  padding-right: ${( props ) => props.$right};
+  padding-left: ${({ $responsiveLeft }) => $responsiveLeft};
+  padding-right: ${({ $responsiveRight }) => $responsiveRight};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     padding-top: ${({ $responsiveTop }) => $responsiveTop};
@@ -179,10 +185,6 @@ export const FadeImage = styled.img`
   bottom: ${( props ) => props.$bottom};
   transform: ${( props ) => props.$transform};
   z-index: 0;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    display: none;
-  };
 `;
 
 export const Chip = styled.div`

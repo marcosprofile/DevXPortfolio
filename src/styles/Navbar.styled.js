@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const NavbarContainer = styled.nav`
   position: fixed;
   width: 100%;
+  display: flex;
+  justify-content: center;
   top: 0;
   left: 0;
   z-index: 10;

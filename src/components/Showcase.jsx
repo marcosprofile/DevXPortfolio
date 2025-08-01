@@ -20,12 +20,8 @@ export default function Showcase() {
   return (
     <PaddingContainer
       id="inicio"
-      $mTop="78px"
-      $top="16%"
-      $bottom="10%"
       $responsiveLeft="1rem"
       $responsiveRight="1rem"
-      $responsiveTop="8rem"
     >
       <FlexContainer
         as={motion.div}

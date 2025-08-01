@@ -1,20 +1,15 @@
 import styled from 'styled-components'
 
 export const GridContainer = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.25rem;
   list-style: none;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile }) {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
 `
 
 export const ListItem = styled.li`
   width: 100%;
-  max-width: 414px;
+  flex: 1 300px;
   height: 254px;
   border-radius: .75rem;
   overflow: hidden;

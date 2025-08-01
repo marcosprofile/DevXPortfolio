@@ -16,8 +16,6 @@ export default function Contact() {
   return (
     <PaddingContainer
       id="contato"
-      $top="5%"
-      $bottom="10%"
       $responsiveLeft="1rem"
       $responsiveRight="1rem"
     >

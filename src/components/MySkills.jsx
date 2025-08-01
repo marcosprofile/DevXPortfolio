@@ -43,8 +43,8 @@ export default function MySkills() {
   return (
     <PaddingContainer
       id="skills"
-      $top="5%"
-      $bottom="5%"
+      $top="5rem"
+      $bottom="5rem"
       $responsiveLeft="1rem"
       $responsiveRight="1rem"
     >
