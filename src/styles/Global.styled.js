@@ -180,13 +180,17 @@ export const Submit = styled(Button).attrs({ as: 'button' })`
 
 export const FadeImage = styled.img`
   height: 468px;
-  position: fixed;
+  position: absolute;
   top: ${( props ) => props.$top};
   right: ${( props ) => props.$right};
   left: ${( props ) => props.$left};
   bottom: ${( props ) => props.$bottom};
   transform: ${( props ) => props.$transform};
   z-index: 0;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    display: none;
+  }
 `;
 
 export const Chip = styled.div`
