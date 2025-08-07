@@ -26,6 +26,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  z-index: 2;
 `;
 
 export const PaddingContainer = styled.div`
@@ -179,7 +180,7 @@ export const Submit = styled(Button).attrs({ as: 'button' })`
 
 export const FadeImage = styled.img`
   height: 468px;
-  position: absolute;
+  position: fixed;
   top: ${( props ) => props.$top};
   right: ${( props ) => props.$right};
   left: ${( props ) => props.$left};
