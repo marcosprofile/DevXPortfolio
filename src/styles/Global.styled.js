@@ -17,6 +17,7 @@ export const MainBody = styled.div`
   background-color: ${({ theme }) => theme.colors.primary};
   width: 100%;
   padding-top: 6rem;
+  overflow-x: hidden;
 `;
 
 export const Container = styled.div`
