@@ -5,7 +5,7 @@
   font-family: DM Sans, sans-serif;
 }
 
-html, body {
+html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
