@@ -47,6 +47,7 @@ export const NavLinkBtn = styled.a`
   border-radius: 8rem;
   border: 1px solid transparent;
   transition: all .2s ease;
+  white-space: nowrap;
 
   svg {
     font-size: 1.25rem;
