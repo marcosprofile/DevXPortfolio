@@ -114,7 +114,7 @@ export const BlueText = styled.span`
 export const ParaText = styled(PaddingContainer)`
   color: ${({ theme }) => theme.colors.para_text_color};
   max-width: ${( props ) => props.$mWidth };
-  line-height: 24px;
+  line-height: ${({ $lineHeight }) => $lineHeight ? "156%" : "1.5rem"};
   text-align: ${({ $center }) => $center ? "center" : ""};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile }) {

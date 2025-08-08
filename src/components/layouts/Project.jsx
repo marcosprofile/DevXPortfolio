@@ -59,7 +59,7 @@ export default function Project({ data }) {
           </IconContainer>
         </FlexContainer>
 
-        <ParaText $top=".5rem" $bottom="2.5rem">
+        <ParaText $top=".5rem" $bottom="2.5rem" $lineHeight>
           <StructuredText data={data.description.value} />
         </ParaText>
 
