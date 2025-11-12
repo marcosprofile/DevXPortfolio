@@ -5,9 +5,10 @@ export const TechStackCard = styled.div`
   background-color: ${({ theme }) => theme.colors.secondary};
   color: ${({ theme }) => theme.colors.primary};
   font-weight: bold;
-  font-size: .75rem;
+  font-size: .688rem;
   padding: .3rem .5rem;
   border-radius: 2rem;
+  text-transform: uppercase;
 `;
 
 export const ProjectImageContainer = styled.div`
