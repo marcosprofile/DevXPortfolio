@@ -37,7 +37,7 @@ export default function Project({ data }) {
       $fullWidthChild='true'
       $responsiveFlex='true'
       $responsiveDirection='column-reverse'
-      $responsiveGap='1rem'
+      $responsiveGap='3rem'
     >
       {/* --left-section-project-- */}
       <motion.div
@@ -45,7 +45,7 @@ export default function Project({ data }) {
         initial='hidden'
         whileInView='visible'
       >
-        <PaddingContainer $top='1rem' $bottom='1rem'>
+        <PaddingContainer $bottom='1rem'>
           <FlexContainer $gap='.5rem' $responsiveFlex>
             {Array.isArray(data.stacks) && data.stacks.map((stack, id) => (
               <TechStackCard key={id}>{stack}</TechStackCard>
