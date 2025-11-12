@@ -13,15 +13,12 @@ export const TechStackCard = styled.div`
 export const ProjectImageContainer = styled.div`
   display: flex;
   justify-content: ${({ justify }) => justify};
-  max-width: 592px;
-  max-height: 300px;
   overflow: hidden;
   border-radius: .75rem;
 `;
 
 export const ProjectImage = styled.img`
   width: 100%;
-  height: 300px;
   object-fit: cover;
   border-radius: 10px;
   transition: all .3s ease-in-out;
@@ -31,7 +28,6 @@ export const ProjectImage = styled.img`
   }
 
   @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    width: 100%;
-    margin-top: 2rem;
+    height: calc(100%) !important;
   };
 `;
