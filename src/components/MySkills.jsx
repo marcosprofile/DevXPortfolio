@@ -5,6 +5,7 @@ import { Skills } from '../utils/Data'
 import {
   FlexContainer,
   PaddingContainer,
+  SectionContainer,
   Heading,
   ParaText,
   BlueText,
@@ -41,7 +42,7 @@ export default function MySkills() {
   }
 
   return (
-    <PaddingContainer
+    <SectionContainer
       id="skills"
       $top="5rem"
       $bottom="5rem"
@@ -109,6 +110,6 @@ export default function MySkills() {
           </SkillsCarouselContainer>
         </SkillsContainer>
       </FlexContainer>
-    </PaddingContainer>
+    </SectionContainer>
   )
 }

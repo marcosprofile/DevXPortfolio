@@ -10,7 +10,8 @@ import {
 import {
   NavbarContainer,
   NavLinkContainer,
-  NavLinkBtn
+  NavLinkBtn,
+  MenuItem
 } from '../styles/Navbar.styled'
 
 import { theme } from '../theme/Theme'
@@ -35,29 +36,22 @@ export default function Navbar () {
 
   return (
     <NavbarContainer $bgColor={sticky ? theme.colors.primary : 'transparent'} >
-      <PaddingContainer
-        $top="1.2rem"
-        $bottom="1.2rem"
-        $responsiveLeft="1rem"
-        $responsiveRight="1rem"
-      >
-        <Container>
-          <FlexContainer $justify="center" $responsiveFlex="true">
-            <NavLinkContainer>
-              {isProjectsPage ? (
-                <NavLinkBtn href="/">
-                  <BsArrowLeftShort />
-                  Voltar à tela de início
-                </NavLinkBtn>
-              ) : (
-                navLinks.map((navigate, id) => (
-                  <NavLinkBtn key={id} href={navigate.href}>{navigate.name}</NavLinkBtn>
-                ))
-              )}
-            </NavLinkContainer>
-          </FlexContainer>
-        </Container>
-      </PaddingContainer>
+      <NavLinkContainer>
+        {isProjectsPage ? (
+          <MenuItem>
+            <NavLinkBtn href="/">
+              <BsArrowLeftShort />
+              Voltar à tela de início
+            </NavLinkBtn>
+          </MenuItem>
+        ) : (
+            navLinks.map((navigate, id) => (
+            <MenuItem key={id}>
+              <NavLinkBtn href={navigate.href}>{navigate.name}</NavLinkBtn>
+            </MenuItem>
+          ))
+        )}
+      </NavLinkContainer>
     </NavbarContainer>
   )
 }

@@ -10,6 +10,7 @@ export const NavbarContainer = styled.nav`
   z-index: 10;
   transition: all .2s ease-in;
   background-color: ${({ $bgColor }) => $bgColor};
+  padding: 1.2rem 1rem;
 `;
 
 export const MenuIcon = styled.a`
@@ -21,17 +22,7 @@ export const MenuIcon = styled.a`
   align-items: center;
 `;
 
-export const NavMenuContainer = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  background-color: ${({ theme }) => theme.colors.primary_light};
-  z-index: 1;
-`;
-
-export const NavLinkContainer = styled.div`
+export const NavLinkContainer = styled.ul`
   display: flex;
   align-items: center;
   gap: .5rem;
@@ -64,15 +55,6 @@ export const NavLinkBtn = styled.a`
   }
 `;
 
-export const MenuItem = styled.a`
-  color: #fff;
-  font-size: 2.5rem;
-  margin-top: 3rem;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.3s ease;
-
-  &:hover {
-    color: ${({ theme }) => theme.colors.secondary};
-  }
+export const MenuItem = styled.li`
+  list-style: none;
 `;

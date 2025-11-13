@@ -9,12 +9,10 @@ import { Analytics } from "@vercel/analytics/react"
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <MainBody>
-        <Navbar />
-        <RoutesApp />
-        <SpeedInsights />
-        <Analytics />
-      </MainBody>
+      <Navbar />
+      <RoutesApp />
+      <SpeedInsights />
+      <Analytics />
     </ThemeProvider>
   );
 }

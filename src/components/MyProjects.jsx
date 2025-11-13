@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 
 import {
   PaddingContainer,
+  SectionContainer,
   Heading,
   BlueText,
 } from '../styles/Global.styled'
@@ -31,7 +32,7 @@ export default function MyProjects() {
   }, [])
 
   return (
-    <PaddingContainer
+    <SectionContainer
       id="Projects"
       $responsiveLeft="1rem"
       $responsiveRight="1rem"
@@ -63,6 +64,6 @@ export default function MyProjects() {
         </PaddingContainer>
       ))}
 
-    </PaddingContainer>
+    </SectionContainer>
   )
 }

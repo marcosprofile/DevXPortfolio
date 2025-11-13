@@ -4,6 +4,7 @@ import { GridContainer, ListItem, Image } from '../styles/GridProjects.styled'
 
 import {
   PaddingContainer,
+  SectionContainer,
   Heading,
   BlueText,
   FlexContainer,
@@ -26,7 +27,7 @@ export default function GridProjects() {
   }, [])
 
   return (
-    <PaddingContainer
+    <SectionContainer
       id="projetos"
       $responsiveLeft="1rem"
       $responsiveRight="1rem"
@@ -89,6 +90,6 @@ export default function GridProjects() {
         </FlexContainer>
       </PaddingContainer>
 
-    </PaddingContainer>
+    </SectionContainer>
   )
 }

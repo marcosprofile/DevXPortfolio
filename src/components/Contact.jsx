@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 
 import {
   PaddingContainer,
+  SectionContainer,
   Heading,
   BlueText,
   FlexContainer,
@@ -14,7 +15,7 @@ import { fadeInBottomVariant } from '../utils/Variants'
 
 export default function Contact() {
   return (
-    <PaddingContainer
+    <SectionContainer
       id="contato"
       $responsiveLeft="1rem"
       $responsiveRight="1rem"
@@ -60,6 +61,6 @@ export default function Contact() {
           </Button>
         </FlexContainer>
       </PaddingContainer>
-    </PaddingContainer>
+    </SectionContainer>
   )
 }

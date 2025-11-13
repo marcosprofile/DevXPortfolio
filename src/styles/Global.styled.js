@@ -11,7 +11,7 @@ export const ProgressBar = styled.div`
   z-index: 10;
 `;
 
-export const MainBody = styled.div`
+export const MainBody = styled.main`
   display: flex;
   justify-content: center;
   background-color: ${({ theme }) => theme.colors.primary};
@@ -62,6 +62,9 @@ export const FlexContainer = styled.div`
     gap: ${({ $responsiveGap }) => $responsiveGap};
   };
 `;
+
+export const SectionContainer = styled(PaddingContainer).attrs({ as: 'section' })`
+`
 
 export const Heading = styled(PaddingContainer)`
   color: ${({ theme }) => theme.colors.white};
@@ -245,4 +248,8 @@ export const BackToTop = styled.a`
   &:hover {
     transform: translateY(-8px);
   }
+`
+
+export const FooterContainer = styled.footer`
+  opacity: .4;
 `
