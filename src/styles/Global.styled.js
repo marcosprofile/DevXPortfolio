@@ -251,5 +251,4 @@ export const BackToTop = styled.a`
 `
 
 export const FooterContainer = styled.footer`
-  opacity: .4;
 `

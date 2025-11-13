@@ -21,8 +21,8 @@ export default function Home() {
         <Footer />
       </Container>
 
-      <FadeImage src={TopFadeImage} $top="0" />
-      <FadeImage src={LeftFadeImage} $top="30vh" $right="0" $transform="rotate(180deg)" />
+      <FadeImage src={TopFadeImage} $top="0" alt="Gradiente Top" />
+      <FadeImage src={LeftFadeImage} $top="30vh" $right="0" $transform="rotate(180deg)" alt="Gradiente Right" />
     </MainBody>
   )
 }
