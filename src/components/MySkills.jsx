@@ -4,7 +4,6 @@ import { Skills } from '../utils/Data'
 
 import {
   FlexContainer,
-  PaddingContainer,
   SectionContainer,
   Heading,
   ParaText,

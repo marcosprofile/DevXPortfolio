@@ -2,12 +2,6 @@ import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 import {
-  FlexContainer,
-  PaddingContainer,
-  Container,
-} from '../styles/Global.styled'
-
-import {
   NavbarContainer,
   NavLinkContainer,
   NavLinkBtn,
