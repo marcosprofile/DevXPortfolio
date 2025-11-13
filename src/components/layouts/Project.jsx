@@ -104,7 +104,14 @@ export default function Project({ data }) {
         initial='hidden'
         whileInView='visible'
       >
-        <ProjectImage src={data.thumbnail.url} alt={data.title} draggable='false' />
+        <ProjectImage
+          src={data.thumbnail.url}
+          srcSet={`${data.thumbnail.url}?w=1024 1024w, ${data.thumbnail.url}?w=1600 1600w`}
+          sizes='(max-width: 1024px) 100vw, 1024px'
+          alt={data.title}
+          draggable='false'
+          loading="lazy"
+        />
       </ProjectImageContainer>
     </FlexContainer>
   )
