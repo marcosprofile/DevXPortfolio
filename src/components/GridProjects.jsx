@@ -70,7 +70,7 @@ export default function GridProjects() {
         >
           {projects.map((project) => (
             <ListItem key={project.id} as={motion.li} variants={item}>
-              <Image src={project.thumbnail.url} title={project.title} />
+              <Image src={`${project.thumbnail.url}?w=1024&auto=format`} title={project.title} loading='lazy' />
             </ListItem>
           ))}
         </GridContainer>

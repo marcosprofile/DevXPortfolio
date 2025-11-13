@@ -105,9 +105,9 @@ export default function Project({ data }) {
         whileInView='visible'
       >
         <ProjectImage
-          src={data.thumbnail.url}
-          srcSet={`${data.thumbnail.url}?w=1024 1024w, ${data.thumbnail.url}?w=1600 1600w`}
-          sizes='(max-width: 1024px) 100vw, 1024px'
+          src={`${data.thumbnail.url}?w=1024&auto=format`}
+          srcSet={`${data.thumbnail.url}?w=800&auto=format 800w, ${data.thumbnail.url}?w=1024&auto=format 1024w, ${data.thumbnail.url}?w=1600&auto=format 1600w`}
+          sizes="(max-width: 1024px) 100vw, 1024px"
           alt={data.title}
           draggable='false'
           loading="lazy"
