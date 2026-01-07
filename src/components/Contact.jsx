@@ -51,10 +51,6 @@ export default function Contact() {
           whileInView="visible"
           $justify="center"
         >
-          <Button href="https://wa.me/5511954375410?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho..." target="_blank" $mr="1rem">
-            <FaWhatsapp />
-            Whatsapp
-          </Button>
           <Button href="mailto:marcos.laurindo@marcotech.dev.br" target="_blank">
             <FaRegEnvelope />
             E-mail
