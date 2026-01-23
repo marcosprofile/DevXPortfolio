@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
-import { carousel, fadeInRightVariant, fadeInTopVariant } from '../utils/Variants'
-import { Skills } from '../utils/Data'
+import CheckBlue from '../assets/check-blue.svg'
 
 import {
   FlexContainer,
@@ -8,38 +7,20 @@ import {
   Heading,
   ParaText,
   BlueText,
+  Chip,
+  Image,
+  PaddingContainer
 } from '../styles/Global.styled'
 
 import {
-  SkillsCarouselContainer,
   SkillCard,
-  Icon,
-  SkillsContainer,
-  SkillsLinearBg
 } from '../styles/MySkills.styled'
 
-import {
-  TbDeviceDesktopAnalytics,
-  TbDeviceDesktopCode
-} from "react-icons/tb"
-import { useIsMobile } from '../hooks/useIsMobile'
+import { TbDeviceDesktopCode } from "react-icons/tb"
+import { fadeInTopVariant, fadeInRightVariant } from '../utils/Variants'
 
 
 export default function MySkills() {
-  const isMobile = useIsMobile()
-  const duplicatedSkills = [...Skills, ...Skills, ...Skills, ...Skills]
-
-  const adjustedVariant = {
-    ...carousel,
-    visible: {
-      ...carousel.visible,
-      transition: {
-        ...carousel.visible.transition,
-        duration: isMobile ? 15 : 40
-      }
-    }
-  }
-
   return (
     <SectionContainer
       id="skills"
@@ -76,38 +57,51 @@ export default function MySkills() {
           initial="hidden"
           whileInView="visible"
           $gap="2rem"
+          $justify="center"
         >
           <SkillCard>
-            <TbDeviceDesktopAnalytics />        
-            <Heading as="h3" size="h3">UI/UX Designer</Heading>
-            <ParaText $top=".75rem" $center>
-              Atuo com design de interfaces focado na experiência do usuário, unindo usabilidade, estética e funcionalidade. Tenho vivência em todo o processo de design — desde a pesquisa com usuários e benchmarks até a criação de wireframes, protótipos navegáveis e interfaces em alta fidelidade. Minha abordagem é centrada no usuário, mas alinhada aos objetivos de negócio, garantindo soluções práticas e bem fundamentadas em boas práticas de UX e UI.
+            <TbDeviceDesktopCode />        
+            <Heading as="h3" size="h3" $textDecoration="underline">UI Engineering & Design Systems</Heading>
+            <ParaText $top=".75rem" $width="100%" $color="color-mix(in oklab, white, #0F172A 25%)">
+              Atuo na construção da camada estrutural da interface, tratando UI como sistema técnico e não apenas entrega visual.
             </ParaText>
-          </SkillCard>
-          <SkillCard $marginTop>
-            <TbDeviceDesktopCode />
-            <Heading as="h3" size="h3">Front-end</Heading>
-            <ParaText $top=".75rem" $center>
-              Tenho experiência no desenvolvimento de interfaces web responsivas, com foco em performance, acessibilidade e manutenção do código. Trabalho com HTML, CSS, JavaScript e TypeScript, além de frameworks como React e Angular. Também utilizo pré-processadores como SASS e frameworks utilitários como TailwindCSS para acelerar a produção. Busco sempre escrever um código limpo e escalável, facilitando futuras evoluções do produto.
+            <ParaText $top=".75rem" $width="100%" $color="color-mix(in oklab, white, #0F172A 25%)">
+              Defino e implemento Design Systems, Design Tokens e arquiteturas de UI que estabelecem contratos claros entre design, código e testes, permitindo que múltiplos times desenvolvam interfaces consistentes, previsíveis e fáceis de evoluir.
+            </ParaText>
+            <ParaText $top=".75rem" $width="100%" $color="color-mix(in oklab, white, #0F172A 25%)">
+              Entrego layouts diretamente em código, com estados e dados mocados, reduzindo ambiguidades, retrabalho e acelerando a implementação de features, enquanto garanto acessibilidade, testabilidade e manutenibilidade em produtos digitais complexos.
             </ParaText>
           </SkillCard>
         </FlexContainer>
 
-        <SkillsContainer>
-          <SkillsLinearBg />
-          <SkillsCarouselContainer
-            as={motion.div}
-            variants={adjustedVariant}
-            initial="hidden"
-            whileInView="visible"
-          >
-            {duplicatedSkills.map((skill, id) => (
-              <Icon key={id}>
-                {skill.icon}
-              </Icon>
-            ))}
-          </SkillsCarouselContainer>
-        </SkillsContainer>
+        <PaddingContainer $bottom="3.5rem">
+          <FlexContainer $justify="center" $gap="1rem" $flexWrap="wrap" $responsiveFlex>
+            <Chip>
+              <Image src={CheckBlue} alt="Check icon" />
+              Design Tokens
+            </Chip>
+            <Chip>
+              <Image src={CheckBlue} alt="Check icon" />
+              CSS Architecture
+            </Chip>
+            <Chip>
+              <Image src={CheckBlue} alt="Check icon" />
+              Component API
+            </Chip>
+            <Chip>
+              <Image src={CheckBlue} alt="Check icon" />
+              Accessibility
+            </Chip>
+            <Chip>
+              <Image src={CheckBlue} alt="Check icon" />
+              Testability
+            </Chip>
+            <Chip>
+              <Image src={CheckBlue} alt="Check icon" />
+              Versioning
+            </Chip>
+          </FlexContainer>
+        </PaddingContainer>
       </FlexContainer>
     </SectionContainer>
   )

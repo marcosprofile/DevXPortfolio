@@ -1,19 +1,15 @@
 import { motion } from 'framer-motion'
 
 import {
-  PaddingContainer,
   FlexContainer,
   SectionContainer,
   Heading,
   ParaText,
   BlueText,
-  IconContainer,
-  Chip,
-  Image
+  IconContainer
 } from '../styles/Global.styled'
 
 import { BsGithub, BsBehance, BsLinkedin, BsEnvelope, BsAward } from 'react-icons/bs'
-import CheckBlue from '../assets/check-blue.svg'
 import { fadeInTopVariant } from '../utils/Variants'
 
 
@@ -47,36 +43,11 @@ export default function Showcase() {
             Olá! Eu sou <BlueText>Marcos Laurindo Ferreira</BlueText>
           </Heading>
           <Heading as="h1" size="h1" $align="center">
-            <BlueText>UX/UI Developer</BlueText>
+          <BlueText>Front-end Engineer · UI Architecture, Design Systems & Front-end Foundations</BlueText>
           </Heading>
           <ParaText as="p" $top="2rem" $bottom="4rem" $mWidth="600px" $center>
-            UX/UI Designer e Desenvolvedor Front-end com mais de 4 anos de experiência, entregando soluções completas — do protótipo à implementação em produção.
+            Front-end Engineer com foco em arquitetura de interfaces, Design Systems e construção de fundações de UI para produtos digitais em escala.
           </ParaText>
-
-          <PaddingContainer $bottom="3.5rem">
-            <FlexContainer $justify="center" $gap="1rem" $flexWrap="wrap" $responsiveFlex>
-              <Chip>
-                <Image src={CheckBlue} alt="Check icon" />
-                Design System
-              </Chip>
-              <Chip>
-                <Image src={CheckBlue} alt="Check icon" />
-                Product
-              </Chip>
-              <Chip>
-                <Image src={CheckBlue} alt="Check icon" />
-                Website
-              </Chip>
-              <Chip>
-                <Image src={CheckBlue} alt="Check icon" />
-                Figma
-              </Chip>
-              <Chip>
-                <Image src={CheckBlue} alt="Check icon" />
-                Framer
-              </Chip>
-            </FlexContainer>
-          </PaddingContainer>
 
           {/* --social-icons-- */}
           <FlexContainer $justify="center" $gap="1.25rem" $responsiveFlex="true">

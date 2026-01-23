@@ -68,7 +68,8 @@ export const SectionContainer = styled(PaddingContainer).attrs({ as: 'section' }
 
 export const Heading = styled(PaddingContainer)`
   color: ${({ theme }) => theme.colors.white};
-  text-align: ${( props ) => props.$align};
+  text-align: ${(props) => props.$align};
+  text-decoration: ${(props) => props.$textDecoration};
   font-size: ${({ size }) => {
     switch (size) {
       case 'h1':
@@ -116,6 +117,8 @@ export const BlueText = styled.span`
 
 export const ParaText = styled(PaddingContainer)`
   color: ${({ theme }) => theme.colors.para_text_color};
+  width: ${(props) => props.$width };
+  color: ${(props) => props.$color};
   max-width: ${( props ) => props.$mWidth };
   line-height: ${({ $lineHeight }) => $lineHeight ? "156%" : "1.5rem"};
   text-align: ${({ $center }) => $center ? "center" : ""};
