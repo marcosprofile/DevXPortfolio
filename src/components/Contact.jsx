@@ -9,7 +9,7 @@ import {
   Button,
 } from '../styles/Global.styled'
 
-import { FaWhatsapp, FaRegEnvelope } from "react-icons/fa6"
+import { FaRegEnvelope } from "react-icons/fa6"
 import { fadeInBottomVariant } from '../utils/Variants'
 
 
