@@ -46,7 +46,7 @@ export default function Showcase() {
           <BlueText>Front-end Engineer</BlueText>
           </Heading>
           <ParaText as="p" $top="2rem" $bottom="4rem" $mWidth="600px" $center>
-            Front-end Engineer com foco em arquitetura de interfaces, Design Systems e construção de fundações de UI para produtos digitais em escala.
+            Com foco em arquitetura de interfaces, Design Systems e construção de fundações de UI para produtos digitais em escala.
           </ParaText>
 
           {/* --social-icons-- */}
