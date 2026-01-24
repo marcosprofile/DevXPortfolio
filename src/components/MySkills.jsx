@@ -43,10 +43,10 @@ export default function MySkills() {
           whileInView="visible"
           $direction="column"
         >
-          <Heading as="h4" size="h4">
+          <Heading as="h4" size="h4" $align="center">
             MINHAS SKILLS
           </Heading>
-          <Heading as="h2" size="h2" $top=".5rem">
+          <Heading as="h2" size="h2" $top=".5rem" $align="center">
             O que <BlueText>eu posso fazer</BlueText>
           </Heading>
         </FlexContainer>

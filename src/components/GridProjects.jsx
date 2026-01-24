@@ -38,6 +38,7 @@ export default function GridProjects() {
         initial="hidden"
         whileInView="visible"
         size="h4"
+        $align="center"
       >
         MEUS PROJETOS
       </Heading>
@@ -49,6 +50,7 @@ export default function GridProjects() {
         initial="hidden"
         whileInView="visible"
         size="h2"
+        $align="center"
       >
         O que <BlueText>eu desenvolvi</BlueText>
       </Heading>

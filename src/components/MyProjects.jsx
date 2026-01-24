@@ -43,8 +43,9 @@ export default function MyProjects() {
         initial="hidden"
         whileInView="visible"
         size="h4"
+        $align="center"
       >
-        PROJETOS
+        MEUS PROJETOS
       </Heading>
 
       <Heading
@@ -54,6 +55,7 @@ export default function MyProjects() {
         initial="hidden"
         whileInView="visible"
         size="h2"
+        $align="center"
       >
         O que <BlueText>eu desenvolvi</BlueText>
       </Heading>
