@@ -2,7 +2,7 @@
 
 export const projectsQuery = `
   query {
-    allContentProjects {
+    allContentProjects(orderBy: _createdAt_DESC) {
       id
       thumbnail {
         url
