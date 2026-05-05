@@ -45,7 +45,7 @@ export default function Showcase() {
           <Heading as="h1" size="h1" $align="center">
           <BlueText>UI Engineer</BlueText>
           </Heading>
-          <ParaText as="p" $top="2rem" $bottom="4rem" $mWidth="600px" $center>
+          <ParaText as="p" $top="2rem" $bottom="4rem" $center>
             UI Engineer focado em Design Systems e arquitetura de interfaces.<br />
             Estruturo sistemas de UI que reduzem inconsistência e facilitam a evolução de produtos.
           </ParaText>
