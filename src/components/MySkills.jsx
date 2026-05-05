@@ -61,15 +61,15 @@ export default function MySkills() {
         >
           <SkillCard>
             <TbDeviceDesktopCode />        
-            <Heading as="h3" size="h3" $textDecoration="underline">UI Engineering & Design Systems</Heading>
+            <Heading as="h3" size="h3" >UI Engineering & Design Systems</Heading>
             <ParaText $top=".75rem" $width="100%" $color="color-mix(in oklab, white, #0F172A 25%)">
-              Atuo na construção da camada estrutural da interface, tratando UI como sistema técnico e não apenas entrega visual.
+              Estruturo a interface como um sistema técnico, definindo padrões que conectam design e código de forma consistente.
             </ParaText>
             <ParaText $top=".75rem" $width="100%" $color="color-mix(in oklab, white, #0F172A 25%)">
-              Defino e implemento Design Systems, Design Tokens e arquiteturas de UI que estabelecem contratos claros entre design, código e testes, permitindo que múltiplos times desenvolvam interfaces consistentes, previsíveis e fáceis de evoluir.
+              Atuo na criação e evolução de <strong>Design Systems e Design Tokens</strong>, organizando a base de UI para garantir previsibilidade, reutilização e facilidade de manutenção.
             </ParaText>
             <ParaText $top=".75rem" $width="100%" $color="color-mix(in oklab, white, #0F172A 25%)">
-              Entrego layouts diretamente em código, com estados e dados mocados, reduzindo ambiguidades, retrabalho e acelerando a implementação de features, enquanto garanto acessibilidade, testabilidade e manutenibilidade em produtos digitais complexos.
+              Na implementação, desenvolvo interfaces diretamente em código, estruturando estilos, componentes e estados de forma clara, reduzindo ambiguidades entre design e desenvolvimento.
             </ParaText>
           </SkillCard>
         </FlexContainer>

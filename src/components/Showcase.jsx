@@ -43,10 +43,11 @@ export default function Showcase() {
             Olá! Eu sou <BlueText>Marcos Laurindo Ferreira</BlueText>
           </Heading>
           <Heading as="h1" size="h1" $align="center">
-          <BlueText>Front-end Engineer</BlueText>
+          <BlueText>UI Engineer</BlueText>
           </Heading>
           <ParaText as="p" $top="2rem" $bottom="4rem" $mWidth="600px" $center>
-            Com foco em arquitetura de interfaces, Design Systems e construção de fundações de UI para produtos digitais em escala.
+            UI Engineer focado em Design Systems e arquitetura de interfaces.<br />
+            Estruturo sistemas de UI que reduzem inconsistência e facilitam a evolução de produtos.
           </ParaText>
 
           {/* --social-icons-- */}

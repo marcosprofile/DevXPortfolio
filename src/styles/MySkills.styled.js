@@ -35,7 +35,7 @@ export const SkillCard = styled.div`
   color: #FFFFFF;
   padding-right: ${({ $paddingRight }) => $paddingRight };
   border-radius: 1rem;
-  max-width: 950px;
+  max-width: 580px;
 
   svg { font-size: 3.5rem };
 
